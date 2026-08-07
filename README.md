@@ -42,9 +42,18 @@ I build web applications end to end — server, data and interface — with a fo
 | **Shift Harmony** | Shift-scheduling platform — planning and managing team work schedules through a refined, component-driven interface. | <samp>React · TypeScript · Cloudflare</samp> |
 | **SmartRadar** | Personal event radar — curates and ranks concerts and events by taste, distance and price. Installable web app, Hebrew RTL. | <samp>JavaScript · PWA</samp> |
 
-## Skills for Claude Code
+## Skills for AI coding agents
 
 Reusable skills that shape *how* the work gets done — the engineering discipline above, packaged so it applies on every project instead of being remembered on each one.
+
+All of them live in one catalogue, [**ai-skills**](https://github.com/DahanItamar/ai-skills). Add it once, install whichever you want:
+
+```
+/plugin marketplace add DahanItamar/ai-skills
+/plugin install uilint@dahanitamar
+```
+
+Each is also a plain `SKILL.md` — Markdown, no code, nothing to run — so it works in Codex, Cursor, or any agent that reads a file.
 
 | Skill | What it does | Use it when |
 |:--|:--|:--|
