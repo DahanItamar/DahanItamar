@@ -53,6 +53,8 @@ All of them live in one catalogue, [**ai-skills**](https://github.com/DahanItama
 /plugin install uilint@dahanitamar
 ```
 
+In the VS Code extension the command is `/plugins`, plural, and opens a dialog instead. Every repository also ships its own plugin manifest, so cloning one into `~/.claude/skills/` works with no marketplace and no install step — the route for web and cloud sessions.
+
 Each is also a plain `SKILL.md` — Markdown, no code, nothing to run — so it works in Codex, Cursor, or any agent that reads a file.
 
 | Skill | What it does | Use it when |
