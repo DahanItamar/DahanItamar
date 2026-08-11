@@ -85,7 +85,3 @@ In the VS Code extension the command is `/plugins`, plural, and opens a dialog i
 </picture>
 
 </div>
-
----
-
-<div align="center"><samp>github.com/DahanItamar</samp></div>
