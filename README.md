@@ -2,7 +2,7 @@
 
 # Itamar Dahan
 
-<samp>FULL-STACK&nbsp;&nbsp;DEVELOPER</samp>
+<samp>FULL-STACK&nbsp;&nbsp;&amp;&nbsp;&nbsp;AUTOMATION&nbsp;&nbsp;DEVELOPER</samp>
 
 <samp>clean architecture&nbsp;&nbsp;·&nbsp;&nbsp;AI-driven engineering&nbsp;&nbsp;·&nbsp;&nbsp;intelligent automation</samp>
 
@@ -39,7 +39,7 @@ I build web applications end to end — server, data and interface — with a fo
 | [**Warehouse Serial Scanner**](https://github.com/DahanItamar/warehouse-serial-scanner) | Touchscreen warehouse intake station — barcode scanning, on-screen keypad checkout, pluggable SQL Server/MySQL/Postgres with a zero-setup mock mode. | <samp>Node.js · Express</samp> |
 
 <details>
-<summary><samp>Also built</samp></summary>
+<summary><samp>Also built&nbsp;&nbsp;(6 more projects)</samp></summary>
 
 <br>
 
@@ -72,11 +72,13 @@ All of them live in one catalogue, [**ai-skills**](https://github.com/DahanItama
 /plugin install uilint@dahanitamar
 ```
 
-In the VS Code extension the command is `/plugins`, plural, and opens a dialog instead. Every repository also ships its own plugin manifest, so cloning one into `~/.claude/skills/` works with no marketplace and no install step — the route for web and cloud sessions. Each is also a plain `SKILL.md` — Markdown, no code, nothing to run — so it works in Codex, Cursor, or any agent that reads a file.
+In the VS Code extension the command is `/plugins`, plural, and opens a dialog instead. Each skill is ultimately a single `SKILL.md` — Markdown, no code, nothing to install — so dropping the file in works just as well in Cursor, Codex, or any agent that reads Markdown.
 
 ## Contributions
 
 <div align="center">
+
+<br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DahanItamar/DahanItamar/output/pacman-contribution-graph-dark.svg" />
