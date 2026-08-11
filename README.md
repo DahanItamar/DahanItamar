@@ -6,6 +6,8 @@
 
 <samp>clean architecture&nbsp;&nbsp;·&nbsp;&nbsp;AI-driven engineering&nbsp;&nbsp;·&nbsp;&nbsp;intelligent automation</samp>
 
+<samp>[itamardahan1111d@gmail.com](mailto:itamardahan1111d@gmail.com)</samp>
+
 </div>
 
 ---
