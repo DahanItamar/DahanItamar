@@ -1,0 +1,35 @@
+name: Generate contribution pacman
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/pacman.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      # Stock github / github-dark themes. Unlike snk, this generator exposes no
+      # colour parameters, so the graph is the one deliberately colourful block
+      # on an otherwise monochrome page.
+      - name: Generate pacman animations
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          games: "pacman"
+
+      # Replaces the whole output branch, so the old snake SVGs go with it.
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
