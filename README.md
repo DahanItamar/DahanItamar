@@ -57,13 +57,36 @@ I build web applications end to end — server, data and interface — with a fo
 
 ## Skills for AI coding agents
 
-Reusable skills that shape *how* the work gets done — the engineering discipline above, packaged so it applies on every project instead of being remembered on each one.
+Reusable skills that shape *how* the work gets done — the engineering discipline above, packaged so it applies on every project instead of being remembered on each one. Three standalone plugins for Claude Code.
 
-Three plugins, each standalone. Every repository is its own marketplace, so there is no catalogue to add first.
+| Plugin | About | |
+|:--|:--|:--|
+| [**spec-architect**](https://github.com/DahanItamar/spec-architect) | The five-stage spec chain — `constitution → spec → tasks → implement → drift`. Every requirement is one EARS sentence with a stable `AC-###`; each stage cites, verifies or reports against that same number, so *done* is checked rather than felt. | <samp>6 skills</samp> |
+| [**readme-architect**](https://github.com/DahanItamar/readme-architect) | Writes a README after running the project, not after reading its folder names — real output, observed numbers, a diagram of the mechanism, and badges that each state a fact you can check. Writes no number it did not measure. | <samp>7 files</samp> |
+| [**uilint**](https://github.com/DahanItamar/uilint) | Catches the interface states that get skipped because whoever built it only clicked the path that works — loading, empty, error, success, partial. Blocks on the 16 that cause silent user harm; the other 23 only report. | <samp>39 rules</samp> |
 
-### [spec-architect](https://github.com/DahanItamar/spec-architect) — the five-stage spec chain
+<details>
+<summary><samp>Install&nbsp;&nbsp;(each repo is its own marketplace)</samp></summary>
 
-`constitution → spec → tasks → implement → drift`, and a front door that tells you which stage you are at. What travels between them is an identifier: every requirement is one EARS sentence with a stable `AC-###`, and each stage cites, verifies, or reports against the same number. That traceability is the whole reason it is more than five prompts that happen to run in order.
+<br>
+
+No catalogue to add first — point Claude Code straight at the repository:
+
+```
+/plugin marketplace add DahanItamar/spec-architect
+/plugin install spec-architect@spec-architect
+```
+
+The same two lines work for `readme-architect` and `uilint`, substituting the name in both places. In the VS Code extension the command is `/plugins`, plural, and opens a dialog instead — the lines above are terminal-CLI syntax and do nothing there.
+
+Each skill is ultimately a `SKILL.md` — Markdown, no code, nothing to install — so cloning into `~/.claude/skills/` works too, as does pasting it into Cursor, Codex, or any agent that reads Markdown.
+
+</details>
+
+<details>
+<summary><samp>The spec chain&nbsp;&nbsp;(6 skills, in order)</samp></summary>
+
+<br>
 
 | Stage | Skill | What it does |
 |:-:|:--|:--|
@@ -74,30 +97,7 @@ Three plugins, each standalone. Every repository is its own marketplace, so ther
 | 4 | [**spec-implement**](https://github.com/DahanItamar/spec-architect/blob/main/skills/spec-implement/SKILL.md) | One task, verified, then the next — stopping at the first unmet criterion instead of building nine tasks on top of a broken one |
 | 5 | [**spec-drift**](https://github.com/DahanItamar/spec-architect/blob/main/skills/spec-drift/SKILL.md) | Whether the code still matches the spec, and *which side is wrong* — regression or staleness, never a silent rewrite of either |
 
-```
-/plugin marketplace add DahanItamar/spec-architect
-/plugin install spec-architect@spec-architect
-```
-
-### [readme-architect](https://github.com/DahanItamar/readme-architect) — READMEs from evidence
-
-Writes a README after running the project, not after reading its folder names. Real output, observed numbers, a mermaid diagram of the mechanism, and an identity block where every badge states a fact you can check — a status, a version, a count, or a licence. It writes no number it did not measure, references no image it did not produce, and tells you plainly what it could not verify.
-
-```
-/plugin marketplace add DahanItamar/readme-architect
-/plugin install readme-architect@readme-architect
-```
-
-### [uilint](https://github.com/DahanItamar/uilint) — the states everyone forgets
-
-Catches the interface states that get skipped because whoever built it only clicked the path that works — loading, empty, error, success and partial. 39 rules, of which 16 block completion and 23 only report: a gate trusted enough to leave switched on is worth more than a stricter one disabled in week two. Findings read as the consequence a user would feel, not as a rule number.
-
-```
-/plugin marketplace add DahanItamar/uilint
-/plugin install uilint@uilint
-```
-
-In the VS Code extension the command is `/plugins`, plural, and opens a dialog instead — the `/plugin` lines above are terminal-CLI syntax and do nothing there. Each skill is ultimately a `SKILL.md` — Markdown, no code, nothing to install — so dropping the file into `~/.claude/skills/` works too, as does pasting it into Cursor, Codex, or any agent that reads Markdown.
+</details>
 
 ## Contributions
 
