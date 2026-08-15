@@ -61,43 +61,9 @@ Reusable skills that shape *how* the work gets done — the engineering discipli
 
 | Plugin | About | |
 |:--|:--|:--|
-| [**spec-architect**](https://github.com/DahanItamar/spec-architect) | The five-stage spec chain — `constitution → spec → tasks → implement → drift`. Every requirement is one EARS sentence with a stable `AC-###`; each stage cites, verifies or reports against that same number, so *done* is checked rather than felt. | <samp>6 skills</samp> |
-| [**readme-architect**](https://github.com/DahanItamar/readme-architect) | Writes a README after running the project, not after reading its folder names — real output, observed numbers, a diagram of the mechanism, and badges that each state a fact you can check. Writes no number it did not measure. | <samp>7 files</samp> |
-| [**uilint**](https://github.com/DahanItamar/uilint) | Catches the interface states that get skipped because whoever built it only clicked the path that works — loading, empty, error, success, partial. Blocks on the 16 that cause silent user harm; the other 23 only report. | <samp>39 rules</samp> |
-
-<details>
-<summary><samp>Install&nbsp;&nbsp;(each repo is its own marketplace)</samp></summary>
-
-<br>
-
-No catalogue to add first — point Claude Code straight at the repository:
-
-```
-/plugin marketplace add DahanItamar/spec-architect
-/plugin install spec-architect@spec-architect
-```
-
-The same two lines work for `readme-architect` and `uilint`, substituting the name in both places. In the VS Code extension the command is `/plugins`, plural, and opens a dialog instead — the lines above are terminal-CLI syntax and do nothing there.
-
-Each skill is ultimately a `SKILL.md` — Markdown, no code, nothing to install — so cloning into `~/.claude/skills/` works too, as does pasting it into Cursor, Codex, or any agent that reads Markdown.
-
-</details>
-
-<details>
-<summary><samp>The spec chain&nbsp;&nbsp;(6 skills, in order)</samp></summary>
-
-<br>
-
-| Stage | Skill | What it does |
-|:-:|:--|:--|
-| — | [**spec-start**](https://github.com/DahanItamar/spec-architect/blob/main/skills/spec-start/SKILL.md) | Reads the repo, prints the chain, and names the one command to run next |
-| 1 | [**spec-constitution**](https://github.com/DahanItamar/spec-architect/blob/main/skills/spec-constitution/SKILL.md) | The repo's rules and its verify command. A rule earns its place only if you can name what breaks without it |
-| 2 | [**spec-architect**](https://github.com/DahanItamar/spec-architect/blob/main/skills/spec-architect/SKILL.md) | Turns a rough idea into a spec precise enough to build from. Asks only the questions where two answers produce two different systems, then decides the rest and writes the assumptions down where they can be rejected |
-| 3 | [**spec-tasks**](https://github.com/DahanItamar/spec-architect/blob/main/skills/spec-tasks/SKILL.md) | An ordered list where every task names the criteria it closes. A task closing nothing is either unnecessary or a requirement nobody wrote |
-| 4 | [**spec-implement**](https://github.com/DahanItamar/spec-architect/blob/main/skills/spec-implement/SKILL.md) | One task, verified, then the next — stopping at the first unmet criterion instead of building nine tasks on top of a broken one |
-| 5 | [**spec-drift**](https://github.com/DahanItamar/spec-architect/blob/main/skills/spec-drift/SKILL.md) | Whether the code still matches the spec, and *which side is wrong* — regression or staleness, never a silent rewrite of either |
-
-</details>
+| [**spec-architect**](https://github.com/DahanItamar/spec-architect) | The five-stage spec chain — `constitution → spec → tasks → implement → drift`. Every requirement is one EARS sentence with a stable `AC-###`; each stage cites, verifies or reports against that same number, so *done* is checked rather than felt. | <samp>6&nbsp;skills</samp> |
+| [**readme-architect**](https://github.com/DahanItamar/readme-architect) | Writes a README after running the project, not after reading its folder names — real output, observed numbers, a diagram of the mechanism, and badges that each state a fact you can check. Writes no number it did not measure. | <samp>7&nbsp;files</samp> |
+| [**uilint**](https://github.com/DahanItamar/uilint) | Catches the interface states that get skipped because whoever built it only clicked the path that works — loading, empty, error, success, partial. Blocks on the 16 that cause silent user harm; the other 23 only report. | <samp>39&nbsp;rules</samp> |
 
 ## Contributions
 
