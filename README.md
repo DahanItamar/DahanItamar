@@ -59,21 +59,45 @@ I build web applications end to end — server, data and interface — with a fo
 
 Reusable skills that shape *how* the work gets done — the engineering discipline above, packaged so it applies on every project instead of being remembered on each one.
 
-| Skill | What it does | Use it when |
-|:--|:--|:--|
-| [**spec-architect**](https://github.com/DahanItamar/flowsystem/tree/main/plugins/flowsystem/skills/spec-architect) | Turns a rough idea into an engineering-grade technical spec — architecture, data models, interfaces, edge cases and risks — before any code is written. Asks only the questions where two answers produce two different systems, then decides the rest and writes the assumptions down where they can be rejected. | Starting a project or a major feature from a loose description |
-| [**spec-drift**](https://github.com/DahanItamar/flowsystem/tree/main/plugins/flowsystem/skills/spec-drift) | Checks whether the code still matches the spec and realigns whichever side is wrong. Reports gaps as regressions or staleness — never silently rewrites either one. | Returning to a project, finishing a milestone, or onboarding anyone onto a codebase that has a spec |
-| [**readme-architect**](https://github.com/DahanItamar/readme-architect/blob/main/SKILL.md) | Writes a README from evidence rather than adjectives — runs the project first, then fills a tight skeleton with real output, observed numbers and the exact setup path. Refuses badge walls, empty sections, and any number it did not measure. | Making a repo public, or fixing a README that describes the project instead of showing it |
-| [**uilint**](https://github.com/DahanItamar/uilint/blob/main/SKILL.md) | Catches the interface states that get skipped because whoever built it only clicked the path that works — loading, empty, error, success and partial. Blocks only on the ones that cause silent user harm, and reports each as the consequence a user would feel rather than as a rule number. | Building or reviewing any UI that fetches, submits or navigates |
+Three plugins, each standalone. Every repository is its own marketplace, so there is no catalogue to add first.
 
-All of them live in one catalogue, [**ai-skills**](https://github.com/DahanItamar/ai-skills). Add it once, install whichever you want:
+### [spec-architect](https://github.com/DahanItamar/spec-architect) — the five-stage spec chain
+
+`constitution → spec → tasks → implement → drift`, and a front door that tells you which stage you are at. What travels between them is an identifier: every requirement is one EARS sentence with a stable `AC-###`, and each stage cites, verifies, or reports against the same number. That traceability is the whole reason it is more than five prompts that happen to run in order.
+
+| Stage | Skill | What it does |
+|:-:|:--|:--|
+| — | [**spec-start**](https://github.com/DahanItamar/spec-architect/blob/main/skills/spec-start/SKILL.md) | Reads the repo, prints the chain, and names the one command to run next |
+| 1 | [**spec-constitution**](https://github.com/DahanItamar/spec-architect/blob/main/skills/spec-constitution/SKILL.md) | The repo's rules and its verify command. A rule earns its place only if you can name what breaks without it |
+| 2 | [**spec-architect**](https://github.com/DahanItamar/spec-architect/blob/main/skills/spec-architect/SKILL.md) | Turns a rough idea into a spec precise enough to build from. Asks only the questions where two answers produce two different systems, then decides the rest and writes the assumptions down where they can be rejected |
+| 3 | [**spec-tasks**](https://github.com/DahanItamar/spec-architect/blob/main/skills/spec-tasks/SKILL.md) | An ordered list where every task names the criteria it closes. A task closing nothing is either unnecessary or a requirement nobody wrote |
+| 4 | [**spec-implement**](https://github.com/DahanItamar/spec-architect/blob/main/skills/spec-implement/SKILL.md) | One task, verified, then the next — stopping at the first unmet criterion instead of building nine tasks on top of a broken one |
+| 5 | [**spec-drift**](https://github.com/DahanItamar/spec-architect/blob/main/skills/spec-drift/SKILL.md) | Whether the code still matches the spec, and *which side is wrong* — regression or staleness, never a silent rewrite of either |
 
 ```
-/plugin marketplace add DahanItamar/ai-skills
-/plugin install uilint@dahanitamar
+/plugin marketplace add DahanItamar/spec-architect
+/plugin install spec-architect@spec-architect
 ```
 
-In the VS Code extension the command is `/plugins`, plural, and opens a dialog instead. Each skill is ultimately a single `SKILL.md` — Markdown, no code, nothing to install — so dropping the file in works just as well in Cursor, Codex, or any agent that reads Markdown.
+### [readme-architect](https://github.com/DahanItamar/readme-architect) — READMEs from evidence
+
+Writes a README after running the project, not after reading its folder names. Real output, observed numbers, a mermaid diagram of the mechanism, and an identity block where every badge states a fact you can check — a status, a version, a count, or a licence. It writes no number it did not measure, references no image it did not produce, and tells you plainly what it could not verify.
+
+```
+/plugin marketplace add DahanItamar/readme-architect
+/plugin install readme-architect@readme-architect
+```
+
+### [uilint](https://github.com/DahanItamar/uilint) — the states everyone forgets
+
+Catches the interface states that get skipped because whoever built it only clicked the path that works — loading, empty, error, success and partial. 39 rules, of which 16 block completion and 23 only report: a gate trusted enough to leave switched on is worth more than a stricter one disabled in week two. Findings read as the consequence a user would feel, not as a rule number.
+
+```
+/plugin marketplace add DahanItamar/uilint
+/plugin install uilint@uilint
+```
+
+In the VS Code extension the command is `/plugins`, plural, and opens a dialog instead — the `/plugin` lines above are terminal-CLI syntax and do nothing there. Each skill is ultimately a `SKILL.md` — Markdown, no code, nothing to install — so dropping the file into `~/.claude/skills/` works too, as does pasting it into Cursor, Codex, or any agent that reads Markdown.
 
 ## Contributions
 
