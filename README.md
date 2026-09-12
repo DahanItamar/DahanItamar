@@ -31,15 +31,16 @@ I build web applications end to end — server, data and interface — with a fo
 
 | Project | About | Stack |
 |:--|:--|:--|
-| [**GitCheckup**](https://github.com/DahanItamar/GitCheckup)<br><samp>↗ [gitcheckup.com](https://gitcheckup.com)</samp> | Scores any public GitHub repository out of 100 — docs, community, activity, popularity and hygiene — and returns a ranked list of what to fix rather than just a number. | <samp>TypeScript · Next.js</samp> |
-| [**HeWordle**](https://github.com/DahanItamar/HeWordle)<br><samp>↗ [wordlehebrew.com](https://wordlehebrew.com)</samp> | Daily Hebrew Wordle, playable now and self-hostable — accounts, streaks, leaderboard. Zero npm dependencies, answers encrypted at rest, WCAG 2.1 AA. | <samp>Node.js · SQLite</samp> |
+| [**GitCheckup**](https://github.com/DahanItamar/GitCheckup) | Scores any public GitHub repository out of 100 — docs, community, activity, popularity and hygiene — and returns a ranked list of what to fix rather than just a number. &nbsp;<samp>↗ [gitcheckup.com](https://gitcheckup.com)</samp> | <samp>TypeScript · Next.js</samp> |
+| [**HeWordle**](https://github.com/DahanItamar/HeWordle) | Daily Hebrew Wordle, playable now and self-hostable — accounts, streaks, leaderboard. Zero npm dependencies, answers encrypted at rest, WCAG 2.1 AA. &nbsp;<samp>↗ [wordlehebrew.com](https://wordlehebrew.com)</samp> | <samp>Node.js · SQLite</samp> |
+| [**Meridian**](https://github.com/DahanItamar/meridian-landing) | Bilingual (EN/HE) RTL landing page for a premium espresso grinder — spec-driven, WCAG 2.2 AA, containerised. &nbsp;<samp>↗ [meridian.itamardahan.com](https://meridian.itamardahan.com/)</samp> | <samp>TypeScript · Next.js · Tailwind</samp> |
 | [**Winnow**](https://github.com/DahanItamar/Winnow) | Local-first desktop app that reads what developers complain about across eight public sources and turns it into project ideas that carry their evidence — every idea quotes the threads it came from. Duplicates are folded by meaning rather than by matching text, so an idea marked *said 2×* means two people, not two phrasings. | <samp>TypeScript · Electron · React · SQLite</samp> |
 | [**Slotline**](https://github.com/DahanItamar/Slotline) | Multi-tenant booking system for rooms, equipment and consultants. Double-booking is made impossible by a Postgres exclusion constraint rather than by application code; tenant isolation by row-level security; live calendars over SSE. | <samp>TypeScript · Fastify · Postgres</samp> |
 | [**Dealership Platform**](https://github.com/DahanItamar/dealership-platform) | White-label bilingual (RTL) car-dealership platform — showroom, financing, leads and a full admin back office, with a zero-setup in-memory demo mode. | <samp>TypeScript · TanStack · Supabase</samp> |
 | [**Airport Simulator**](https://github.com/DahanItamar/AirportSimulator) | Real-time airport simulation — arrivals and departures competing for a shared runway and gates, watched live from a zero-dependency control-tower UI. | <samp>C# · ASP.NET Core · JS</samp> |
 
 <details>
-<summary><samp>Also built&nbsp;&nbsp;(8 more projects)</samp></summary>
+<summary><samp>Also built&nbsp;&nbsp;(7 more projects)</samp></summary>
 
 <br>
 
@@ -49,7 +50,6 @@ I build web applications end to end — server, data and interface — with a fo
 |:--|:--|:--|
 | [**ShortLinks**](https://github.com/DahanItamar/ShortLinks-Project) | URL shortener with per-user click analytics — Google sign-in, ownership-guarded click logs, short codes from `RandomNumberGenerator` rather than a seeded `Random`. | <samp>C# · ASP.NET Core · EF Core</samp> |
 | [**Warehouse Serial Scanner**](https://github.com/DahanItamar/warehouse-serial-scanner) | Touchscreen warehouse intake station — barcode scanning, on-screen keypad checkout, pluggable SQL Server/MySQL/Postgres with a zero-setup mock mode. | <samp>Node.js · Express</samp> |
-| [**Meridian**](https://github.com/DahanItamar/meridian-landing) | Bilingual (EN/HE) RTL landing page for a premium espresso grinder — spec-driven, WCAG 2.2 AA, containerised. | <samp>TypeScript · Next.js · Tailwind</samp> |
 | **Smart Data Matcher** | AI-powered spreadsheet normalizer — LLM column mapping, value cleanup and rule-based filtering, from messy export to standard schema. | <samp>TypeScript · Gemini · Supabase</samp> |
 | **Market News Engine** | Autonomous market and stock-news content pipeline — AI-generated posts, stories, tweets and short-form video, published across X, Threads, Instagram and Facebook. | <samp>n8n · LLM APIs · Social APIs</samp> |
 | **TeachersPlatform** | Marketplace connecting music teachers and students — granular service listings, faceted search, escrow-protected payments. Hebrew-first, full RTL. | <samp>TypeScript · Next.js · Prisma</samp> |
