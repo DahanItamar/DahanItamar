@@ -31,6 +31,7 @@ I build web applications end to end — server, data and interface — with a fo
 
 | Project | About | Stack |
 |:--|:--|:--|
+| [**House Rules**](https://github.com/DahanItamar/HouseRules) | Complete offline casino adventure with nine playable cabinets, four connected rooms and a fully keyboard-accessible interface — built as a disciplined human-directed, AI-assisted game-development experiment. &nbsp;<samp>↗ [case study](https://houserules.itamardahan.com/)</samp> | <samp>Godot 4 · GDScript</samp> |
 | [**GitCheckup**](https://github.com/DahanItamar/GitCheckup) | Scores any public GitHub repository out of 100 — docs, community, activity, popularity and hygiene — and returns a ranked list of what to fix rather than just a number. &nbsp;<samp>↗ [gitcheckup.com](https://gitcheckup.com)</samp> | <samp>TypeScript · Next.js</samp> |
 | [**HeWordle**](https://github.com/DahanItamar/HeWordle) | Daily Hebrew Wordle, playable now and self-hostable — accounts, streaks, leaderboard. Zero npm dependencies, answers encrypted at rest, WCAG 2.1 AA. &nbsp;<samp>↗ [wordlehebrew.com](https://wordlehebrew.com)</samp> | <samp>Node.js · SQLite</samp> |
 | [**Meridian**](https://github.com/DahanItamar/meridian-landing) | Bilingual (EN/HE) RTL landing page for a premium espresso grinder — spec-driven, WCAG 2.2 AA, containerised. &nbsp;<samp>↗ [meridian.itamardahan.com](https://meridian.itamardahan.com/)</samp> | <samp>TypeScript · Next.js · Tailwind</samp> |
