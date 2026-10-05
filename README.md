@@ -13,37 +13,44 @@
 <p align="center"><strong>Development</strong></p>
 
 <p align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/components/stack-dark.svg" />
-  <img src="assets/components/stack-light.svg" width="520" alt="TypeScript, JavaScript, React, Node.js, C#, .NET, PostgreSQL, SQLite, Docker and Git" />
-</picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/typescript.svg" /><img src="assets/components/badges/typescript-light.svg" width="134" height="42" alt="TypeScript" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/javascript.svg" /><img src="assets/components/badges/javascript-light.svg" width="134" height="42" alt="JavaScript" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/react.svg" /><img src="assets/components/badges/react-light.svg" width="102" height="42" alt="React" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/nodedotjs.svg" /><img src="assets/components/badges/nodedotjs-light.svg" width="118" height="42" alt="Node.js" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/csharp.svg" /><img src="assets/components/badges/csharp-light.svg" width="84" height="42" alt="C#" /></picture>
+</p>
+
+<p align="center">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/dotnet.svg" /><img src="assets/components/badges/dotnet-light.svg" width="100" height="42" alt=".NET" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/postgresql.svg" /><img src="assets/components/badges/postgresql-light.svg" width="146" height="42" alt="PostgreSQL" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/sqlite.svg" /><img src="assets/components/badges/sqlite-light.svg" width="110" height="42" alt="SQLite" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/docker.svg" /><img src="assets/components/badges/docker-light.svg" width="110" height="42" alt="Docker" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/git.svg" /><img src="assets/components/badges/git-light.svg" width="88" height="42" alt="Git" /></picture>
 </p>
 
 <p align="center"><strong>AI &amp; automation</strong></p>
 
 <p align="center">
-  <img src="assets/components/claudecode-color.svg" width="48" height="48" alt="Claude Code" /> &nbsp;&nbsp;
-  <img src="assets/components/codex-color.svg" width="48" height="48" alt="Codex" /> &nbsp;&nbsp;
-  <img src="assets/components/gemini-color.svg" width="48" height="48" alt="Gemini" /> &nbsp;&nbsp;
-  <img src="assets/components/n8n-color.svg" width="48" height="48" alt="n8n" />
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/claudecode.svg" /><img src="assets/components/badges/claudecode-light.svg" width="152" height="42" alt="Claude Code" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/codex.svg" /><img src="assets/components/badges/codex-light.svg" width="108" height="42" alt="Codex" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/gemini.svg" /><img src="assets/components/badges/gemini-light.svg" width="116" height="42" alt="Gemini" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/n8n.svg" /><img src="assets/components/badges/n8n-light.svg" width="92" height="42" alt="n8n" /></picture>
 </p>
-
-<p align="center">Claude Code · Codex · Gemini · n8n</p>
 
 ## Selected systems
 
-<a href="https://github.com/DahanItamar/DockNest"><img src="assets/components/docknest-banner.png" width="100%" alt="DockNest — backups are only useful if recovery works. Docker sites become encrypted SFTP archives and isolated recovery environments." /></a>
-
-[**DockNest**](https://github.com/DahanItamar/DockNest) is my self-hosted backup and recovery system. It packages encrypted backups on SFTP and restores isolated copies, with recovery evidence and an independently encrypted manager recovery kit.
-
 <p>
-  <a href="https://github.com/DahanItamar/Slotline"><img src="assets/components/slotline-card.svg" width="410" alt="Slotline — database-enforced reservations, tenant isolation and live calendars. TypeScript, Fastify, PostgreSQL." /></a>
-  <a href="https://github.com/DahanItamar/Winnow"><img src="assets/components/winnow-card.svg" width="410" alt="Winnow — local-first project ideas grounded in developer complaints and original sources. Electron, React, SQLite." /></a>
+  <a href="https://github.com/DahanItamar/DockNest"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/docknest-card.svg" /><img src="assets/components/docknest-card-light.svg" width="410" alt="DockNest — encrypted backups, isolated restores and recovery evidence. Node.js, SQLite, Docker, SFTP." /></picture></a>
+  <a href="https://github.com/DahanItamar/Slotline"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/slotline-card.svg" /><img src="assets/components/slotline-card-light.svg" width="410" alt="Slotline — database-enforced reservations, tenant isolation and live calendars. TypeScript, Fastify, PostgreSQL." /></picture></a>
 </p>
 
 <p>
-  <a href="https://github.com/DahanItamar/HouseRules"><img src="assets/components/houserules-card.svg" width="410" alt="House Rules — offline casino adventure with nine cabinets and four rooms, built with Godot." /></a>
-  <a href="https://github.com/DahanItamar/GitCheckup"><img src="assets/components/gitcheckup-card.svg" width="410" alt="GitCheckup — repository health scores and ranked fixes. TypeScript, Next.js." /></a>
+  <a href="https://github.com/DahanItamar/Winnow"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/winnow-card.svg" /><img src="assets/components/winnow-card-light.svg" width="410" alt="Winnow — local-first project ideas grounded in developer complaints and original sources. Electron, React, SQLite." /></picture></a>
+  <a href="https://github.com/DahanItamar/HouseRules"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/houserules-card.svg" /><img src="assets/components/houserules-card-light.svg" width="410" alt="House Rules — offline casino adventure with nine cabinets and four rooms, built with Godot." /></picture></a>
+</p>
+
+<p>
+  <a href="https://github.com/DahanItamar/GitCheckup"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/gitcheckup-card.svg" /><img src="assets/components/gitcheckup-card-light.svg" width="410" alt="GitCheckup — repository health scores and ranked fixes. TypeScript, Next.js." /></picture></a>
 </p>
 
 ## How I build

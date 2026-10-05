@@ -3,6 +3,7 @@
 from html import escape
 from pathlib import Path
 import re
+from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'assets' / 'components'
@@ -14,7 +15,55 @@ def svg(width, height, body, title):
     return f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{escape(title, quote=True)}"><title>{escape(title)}</title><g font-family="{FONT}">{body}</g></svg>\n'
 
 
+def light_theme(markup):
+    colors = {
+        '#c6f27f': '#456c17', '#f0f2eb': '#1f2328',
+        '#bac3cb': '#59636e', '#a5b0b9': '#59636e',
+        '#39464d': '#d1d9e0', '#2b363e': '#d1d9e0',
+        '#263220': '#f0f6e5', '#291d1b': '#fff1f1', '#ffaaaa': '#c54b4b',
+    }
+    for dark, light in colors.items():
+        markup = markup.replace(dark, light)
+    return markup
+
+
+def themed_image(path, width, alt, height=None):
+    light = path.removesuffix('.svg') + '-light.svg'
+    height_attr = f' height="{height}"' if height else ''
+    return f'<picture><source media="(prefers-color-scheme: dark)" srcset="{path}" /><img src="{light}" width="{width}"{height_attr} alt="{escape(alt, quote=True)}" /></picture>'
+
+
+badges = [
+    ('typescript', 'TypeScript', 134), ('javascript', 'JavaScript', 134),
+    ('react', 'React', 102), ('nodedotjs', 'Node.js', 118), ('csharp', 'C#', 84),
+    ('dotnet', '.NET', 100), ('postgresql', 'PostgreSQL', 146),
+    ('sqlite', 'SQLite', 110), ('docker', 'Docker', 110), ('git', 'Git', 88),
+    ('claudecode', 'Claude Code', 152), ('codex', 'Codex', 108),
+    ('gemini', 'Gemini', 116), ('n8n', 'n8n', 92),
+]
+ElementTree.register_namespace('', 'http://www.w3.org/2000/svg')
+for slug, label, width in badges:
+    logo = ElementTree.parse(OUT / 'badges' / 'logos' / f'{slug}.svg').getroot()
+    logo.attrib.pop('style', None)
+    logo.attrib.update(x='13', y='10', width='22', height='22', fill='#c6f27f', color='#c6f27f')
+    for element in logo.iter():
+        if 'fill' in element.attrib and element.get('fill') != 'none':
+            element.set('fill', '#c6f27f')
+    body = f'<rect x=".5" y=".5" width="{width-1}" height="41" rx="6" fill="none" stroke="#39464d"/>'
+    body += ElementTree.tostring(logo, encoding='unicode')
+    body += f'<text x="46" y="26" fill="#f0f2eb" font-size="13" font-weight="600">{escape(label)}</text>'
+    markup = svg(width, 42, body, label)
+    (OUT / 'badges' / f'{slug}.svg').write_text(markup, encoding='utf-8', newline='\n')
+    (OUT / 'badges' / f'{slug}-light.svg').write_text(light_theme(markup), encoding='utf-8', newline='\n')
+
+
+def badge_row(items):
+    images = ['  ' + themed_image(f'assets/components/badges/{slug}.svg', width, label, 42) for slug, label, width in items]
+    return '<p align="center">\n' + '\n'.join(images) + '\n</p>'
+
+
 cards = [
+    ('DockNest', 'BACKUP & RECOVERY', 'Backups ready for recovery.', ['Encrypted backups. Isolated restores.', 'Recovery backed by evidence.'], 'Node.js · SQLite · Docker · SFTP'),
     ('Slotline', 'BOOKING SYSTEM', 'One resource. One booking.', ['Database-enforced reservations.', 'Tenant isolation. Live calendars.'], 'TypeScript · Fastify · PostgreSQL'),
     ('Winnow', 'LOCAL-FIRST DESKTOP', 'Ideas with evidence.', ['Developer complaints become ideas,', 'with links back to their sources.'], 'Electron · React · SQLite'),
     ('HouseRules', 'OFFLINE GAME', 'An offline casino adventure.', ['Nine casino cabinets. Four rooms.', 'An offline adventure built with Godot.'], 'Godot 4 · GDScript'),
@@ -22,10 +71,12 @@ cards = [
 ]
 for name, category, headline, description, stack in cards:
     title = 'House Rules' if name == 'HouseRules' else name
-    body = '<rect x=".5" y=".5" width="419" height="189" rx="8" fill="#101419" stroke="#39464d"/>'
-    body += f'<text x="22" y="23" fill="#a5b0b9" font-size="10" letter-spacing="2">{category}</text>'
+    body = '<rect x=".5" y=".5" width="419" height="189" rx="8" fill="none" stroke="#39464d"/>'
+    body += f'<text x="22" y="23" fill="#a5b0b9" font-size="10" letter-spacing="2">{escape(category)}</text>'
     body += f'<text x="22" y="59" fill="#f0f2eb" font-size="29" font-weight="650">{title}</text>'
-    if name == 'Slotline':
+    if name == 'DockNest':
+        body += '<rect x="327" y="39" width="24" height="14" rx="2" fill="none" stroke="#a5b0b9"/><rect x="327" y="57" width="24" height="14" rx="2" fill="none" stroke="#a5b0b9"/><path d="M333 46H345M333 64H345M355 55H369M365 51L369 55L365 59" fill="none" stroke="#a5b0b9"/><rect x="375" y="40" width="23" height="30" rx="3" fill="#263220" stroke="#c6f27f"/><path d="M380 55L385 60L393 50" stroke="#c6f27f" fill="none"/>'
+    elif name == 'Slotline':
         body += '<path d="M329 40H397M329 53H397M329 66H397M344 35V74M370 35V74" stroke="#39464d" fill="none"/><rect x="335" y="42" width="36" height="14" rx="2" fill="#263220" stroke="#c6f27f"/><rect x="355" y="56" width="36" height="14" rx="2" fill="#291d1b" stroke="#ffaaaa"/>'
     elif name == 'Winnow':
         for y in [39, 54, 69]:
@@ -36,7 +87,9 @@ for name, category, headline, description, stack in cards:
         body += f'<text x="22" y="{119+i*22}" fill="#bac3cb" font-size="15">{escape(line)}</text>'
     body += '<path d="M22 154H398" stroke="#2b363e"/>'
     body += f'<text x="22" y="176" fill="#a5b0b9" font-size="12">{escape(stack)}</text>'
-    (OUT / f'{name.lower()}-card.svg').write_text(svg(420, 190, body, f'{title}: {headline}'), encoding='utf-8', newline='\n')
+    markup = svg(420, 190, body, f'{title}: {headline}')
+    (OUT / f'{name.lower()}-card.svg').write_text(markup, encoding='utf-8', newline='\n')
+    (OUT / f'{name.lower()}-card-light.svg').write_text(light_theme(markup), encoding='utf-8', newline='\n')
 
 still = '<rect width="900" height="66" rx="5" fill="#101419"/><text x="450" y="40" text-anchor="middle" fill="#c6f27f" font-size="27" font-weight="550">I build useful systems. Then make them dependable.</text>'
 (OUT / 'typing-still.svg').write_text(svg(900, 66, still, 'I build useful systems. Then make them dependable.'), encoding='utf-8')
@@ -80,37 +133,25 @@ readme = '''<h1 align="center">ITAMAR DAHAN</h1>
 
 <p align="center"><strong>Development</strong></p>
 
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/components/stack-dark.svg" />
-  <img src="assets/components/stack-light.svg" width="520" alt="TypeScript, JavaScript, React, Node.js, C#, .NET, PostgreSQL, SQLite, Docker and Git" />
-</picture>
-</p>
+{development_badges}
 
 <p align="center"><strong>AI &amp; automation</strong></p>
 
-<p align="center">
-  <img src="assets/components/claudecode-color.svg" width="48" height="48" alt="Claude Code" /> &nbsp;&nbsp;
-  <img src="assets/components/codex-color.svg" width="48" height="48" alt="Codex" /> &nbsp;&nbsp;
-  <img src="assets/components/gemini-color.svg" width="48" height="48" alt="Gemini" /> &nbsp;&nbsp;
-  <img src="assets/components/n8n-color.svg" width="48" height="48" alt="n8n" />
-</p>
-
-<p align="center">Claude Code · Codex · Gemini · n8n</p>
+{ai_badges}
 
 ## Selected systems
 
-<a href="https://github.com/DahanItamar/DockNest"><img src="assets/components/docknest-banner.png" width="100%" alt="DockNest — backups are only useful if recovery works. Docker sites become encrypted SFTP archives and isolated recovery environments." /></a>
-
-[**DockNest**](https://github.com/DahanItamar/DockNest) is my self-hosted backup and recovery system. It packages encrypted backups on SFTP and restores isolated copies, with recovery evidence and an independently encrypted manager recovery kit.
-
 <p>
+  <a href="https://github.com/DahanItamar/DockNest"><img src="assets/components/docknest-card.svg" width="410" alt="DockNest — encrypted backups, isolated restores and recovery evidence. Node.js, SQLite, Docker, SFTP." /></a>
   <a href="https://github.com/DahanItamar/Slotline"><img src="assets/components/slotline-card.svg" width="410" alt="Slotline — database-enforced reservations, tenant isolation and live calendars. TypeScript, Fastify, PostgreSQL." /></a>
-  <a href="https://github.com/DahanItamar/Winnow"><img src="assets/components/winnow-card.svg" width="410" alt="Winnow — local-first project ideas grounded in developer complaints and original sources. Electron, React, SQLite." /></a>
 </p>
 
 <p>
+  <a href="https://github.com/DahanItamar/Winnow"><img src="assets/components/winnow-card.svg" width="410" alt="Winnow — local-first project ideas grounded in developer complaints and original sources. Electron, React, SQLite." /></a>
   <a href="https://github.com/DahanItamar/HouseRules"><img src="assets/components/houserules-card.svg" width="410" alt="House Rules — offline casino adventure with nine cabinets and four rooms, built with Godot." /></a>
+</p>
+
+<p>
   <a href="https://github.com/DahanItamar/GitCheckup"><img src="assets/components/gitcheckup-card.svg" width="410" alt="GitCheckup — repository health scores and ranked fixes. TypeScript, Next.js." /></a>
 </p>
 
@@ -138,6 +179,9 @@ I turn engineering workflows into reusable skills for AI coding agents:
 </picture>
 
 '''
+readme = readme.replace('{development_badges}', badge_row(badges[:5]) + '\n\n' + badge_row(badges[5:10]))
+readme = readme.replace('{ai_badges}', badge_row(badges[10:]))
+readme = re.sub(r'<img src="(assets/components/[^\"]+-card\.svg)" width="410" alt="([^\"]+)" />', lambda match: themed_image(match[1], 410, match[2]), readme)
 readme += catalogue + '\n\n<details>\n<summary><strong>About and engineering principles</strong></summary>\n\n' + about + '\n\n' + principles + '\n\n</details>\n\n'
 readme += '''---
 

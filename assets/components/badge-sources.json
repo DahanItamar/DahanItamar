@@ -1,0 +1,16 @@
+{
+  "badges/logos/typescript.svg": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/typescript.svg",
+  "badges/logos/javascript.svg": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/javascript.svg",
+  "badges/logos/react.svg": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/react.svg",
+  "badges/logos/nodedotjs.svg": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/nodedotjs.svg",
+  "badges/logos/dotnet.svg": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/dotnet.svg",
+  "badges/logos/postgresql.svg": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/postgresql.svg",
+  "badges/logos/sqlite.svg": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/sqlite.svg",
+  "badges/logos/docker.svg": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/docker.svg",
+  "badges/logos/git.svg": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/git.svg",
+  "badges/logos/csharp.svg": "https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/csharp/csharp-plain.svg",
+  "badges/logos/claudecode.svg": "https://raw.githubusercontent.com/lobehub/lobe-icons/82e641b4fece9d1028a127149af9ded00df5ac0c/packages/static-svg/icons/claudecode.svg",
+  "badges/logos/codex.svg": "https://raw.githubusercontent.com/lobehub/lobe-icons/82e641b4fece9d1028a127149af9ded00df5ac0c/packages/static-svg/icons/codex.svg",
+  "badges/logos/gemini.svg": "https://raw.githubusercontent.com/lobehub/lobe-icons/82e641b4fece9d1028a127149af9ded00df5ac0c/packages/static-svg/icons/gemini.svg",
+  "badges/logos/n8n.svg": "https://raw.githubusercontent.com/lobehub/lobe-icons/82e641b4fece9d1028a127149af9ded00df5ac0c/packages/static-svg/icons/n8n.svg"
+}

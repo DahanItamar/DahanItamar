@@ -1,20 +1,23 @@
 # Profile components
 
-The profile opens with centered, static native headings and text, using GitHub's own font, heading sizes and page background. The project graphics retain the poster's graphite and lime palette. Icon SVGs are stored in this repository, so viewing them does not depend on the generator being online.
+The profile opens with centered, static native headings and text, using GitHub's own font, heading sizes and page background. Badges and repository cards use transparent backgrounds, themed text and green accents. Icon SVGs are stored in this repository, so viewing them does not depend on the generator being online.
 
 | Component | Source | Setup |
 |:--|:--|:--|
 | Name, subtitle and headline | Native HTML headings/text | Static, centered, without an image or custom background. GitHub controls the font and heading sizes. |
 | Archived header graphic | [kyechan99/capsule-render](https://github.com/kyechan99/capsule-render) | Retained from the previous preview; not embedded in the current README. Parameters in `sources.json`. |
 | Archived typing graphic | [DenverCoder1/readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg) | Retained from the previous preview; not embedded in the current README. |
-| Technology icons | [tandpfun/skill-icons](https://github.com/tandpfun/skill-icons) | Generated dark/light SVGs for the profile's existing stack. |
-| AI and automation icons | [lobehub/lobe-icons](https://github.com/lobehub/lobe-icons) | Static Claude Code, Codex, Gemini and n8n logos, with native text labels. Vendored unmodified from commit `82e641b4fece9d1028a127149af9ded00df5ac0c`; source URLs in `sources.json`. |
+| Development badges | [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons) and [devicons/devicon](https://github.com/devicons/devicon) | Ten individual static SVG badges. Simple Icons provides nine logos; Devicon provides C#. Original logo paths retained, with themed fills inside transparent badge frames. Sources pinned in `badge-sources.json`. |
+| AI and automation badges | [lobehub/lobe-icons](https://github.com/lobehub/lobe-icons) | Four individual static badges for Claude Code, Codex, Gemini and n8n. Monochrome logo paths from commit `82e641b4fece9d1028a127149af9ded00df5ac0c`, recolored lime. Sources pinned in `badge-sources.json`. |
+| Archived technology icons | [tandpfun/skill-icons](https://github.com/tandpfun/skill-icons) | Original dark/light icon strips retained for restoration; not embedded in the current README. |
 | Contribution game | [abozanona/pacman-contribution-graph](https://github.com/abozanona/pacman-contribution-graph) | Existing daily workflow and `output` branch, retained unchanged. |
-| Repository cards | Original SVGs | Inspired by the clickable card pattern in [github-readme-stats](https://github.com/anuraghazra/github-readme-stats); no code copied and no statistics invented. |
+| Repository cards | Original SVGs | DockNest, Slotline, Winnow, House Rules and GitCheckup share the same 420 × 190 layout, transparent background, typography, spacing and themed highlights. Each card links to its repository; project descriptions are inside the cards. Inspired by the clickable card pattern in [github-readme-stats](https://github.com/anuraghazra/github-readme-stats); no code copied and no statistics invented. |
 | Acceptance-criterion path | Original SVGs | Finite 4.4-second animation, with static reduced-motion sources and a mobile layout. |
-| DockNest banner | Built-in image generation tool | Derived from the approved poster; illustrative artwork, not a screenshot. |
+| Archived DockNest banner | Built-in image generation tool | Derived from the approved poster; illustrative artwork, not a screenshot. Retained for restoration; the current README uses the matching SVG card instead. |
 
-MIT notices for the four vendored component tools are in [`licenses`](licenses). Geist's [Open Font License](../fonts/OFL.txt) is also retained. The original cards and process diagram use system fonts.
+MIT notices for the vendored component tools, including Lobe Icons and Devicon, and Simple Icons' CC0 license are in [`licenses`](licenses). Geist's [Open Font License](../fonts/OFL.txt) is also retained. The original badges, cards and process diagram use system fonts.
+
+Every badge is a separate SVG with its own icon, name and accessible alternative text. All fourteen share the same 42-pixel height and transparent background, allowing GitHub's page background to show through. Dark variants use lime `#c6f27f` icons and off-white `#f0f2eb` text; light variants use darker green `#456c17` icons and dark `#1f2328` text. Both have subtle borders. Cards use the same transparent background and theme handling. Each image has its own `<picture>` element to select the color scheme, and separate badges allow rows to wrap on narrower screens. The original downloaded logos live in `badges/logos`; the builder creates the styled badge files without modifying those sources.
 
 The AI row reflects the owner's coding workflow and project documentation: Claude Code in ReelScribe and the agent skills, Codex in the coding workflow, Gemini in SmartDataMatcher, and n8n for automation. These identify tools used, not endorsements. Private project documentation is not copied into this repository.
 
@@ -32,7 +35,7 @@ To regenerate the public-service snapshots separately:
 python scripts/refresh_readme_components.py
 ```
 
-The refresh downloads and validates all eight SVGs before replacing any existing snapshot. The AI logo URLs are pinned to a source commit. The contribution graph continues to refresh through its existing workflow. Source links and SVG parameters were checked on 2026-10-06.
+The refresh downloads and validates all source SVGs before replacing any existing snapshot. Badge logo URLs are pinned to source commits. Run `build_component_readme.py` after refreshing to rebuild the styled badges. The contribution graph continues to refresh through its existing workflow. Source links and SVG parameters were checked on 2026-10-06.
 
 ## Previous versions and maintenance files
 
