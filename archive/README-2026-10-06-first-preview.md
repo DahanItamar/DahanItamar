@@ -1,10 +1,11 @@
-[← View the portfolio poster](README.md)
-
 # Itamar Dahan
 
-**I build useful systems. Then make them dependable.**
-
-Full-stack development · Automation · AI-assisted engineering
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/profile/hero-mobile-dark.png" />
+  <source media="(max-width: 640px)" srcset="assets/profile/hero-mobile-light.png" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/hero-dark.png" />
+  <img src="assets/profile/hero-light.png" alt="I build useful systems. Then make them dependable. Full-stack development, automation and AI-assisted engineering." width="100%" />
+</picture>
 
 [Explore the systems](#selected-work) · [How I build](#skills-for-ai-coding-agents) · [Start a conversation](mailto:itamardahan1111d@gmail.com)
 
@@ -24,6 +25,17 @@ A self-hosted system for discovering Docker and static sites, scheduling backups
 
 <samp>Private project · controlled beta · Node.js · SQLite · Docker · SFTP</samp>
 
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark) and (prefers-reduced-motion: reduce)" srcset="assets/profile/docknest-mobile-dark.png" />
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="assets/profile/docknest-mobile-light.png" />
+  <source media="(prefers-color-scheme: dark) and (prefers-reduced-motion: reduce)" srcset="assets/profile/docknest-dark.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/profile/docknest-light.png" />
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/profile/docknest-mobile-dark.gif" />
+  <source media="(max-width: 640px)" srcset="assets/profile/docknest-mobile-light.gif" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/docknest-dark.gif" />
+  <img src="assets/profile/docknest-light.gif" alt="Illustrated DockNest flow: capture a Docker site, protect the package in encrypted SFTP storage, and recover an isolated private copy." width="100%" loading="lazy" />
+</picture>
+
 ### [Slotline](https://github.com/DahanItamar/Slotline)
 
 **One resource. One booking.**
@@ -32,6 +44,17 @@ A multi-tenant booking system for rooms, equipment and consultants. A PostgreSQL
 
 <samp>TypeScript · Fastify · PostgreSQL</samp>
 
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark) and (prefers-reduced-motion: reduce)" srcset="assets/profile/slotline-mobile-dark.png" />
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="assets/profile/slotline-mobile-light.png" />
+  <source media="(prefers-color-scheme: dark) and (prefers-reduced-motion: reduce)" srcset="assets/profile/slotline-dark.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/profile/slotline-light.png" />
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/profile/slotline-mobile-dark.gif" />
+  <source media="(max-width: 640px)" srcset="assets/profile/slotline-mobile-light.gif" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/slotline-dark.gif" />
+  <img src="assets/profile/slotline-light.gif" alt="Illustrated Slotline schedule: a new reservation overlaps an existing booking and is rejected by the database constraint; the original booking stays." width="100%" loading="lazy" />
+</picture>
+
 ### [Winnow](https://github.com/DahanItamar/Winnow)
 
 **Ideas with evidence.**
@@ -39,6 +62,17 @@ A multi-tenant booking system for rooms, equipment and consultants. A PostgreSQL
 A local-first desktop app that turns developer complaints from eight public sources into project ideas linked to the original threads. Semantic deduplication folds repeated complaints together while keeping their evidence.
 
 <samp>TypeScript · Electron · React · SQLite</samp>
+
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark) and (prefers-reduced-motion: reduce)" srcset="assets/profile/winnow-mobile-dark.png" />
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="assets/profile/winnow-mobile-light.png" />
+  <source media="(prefers-color-scheme: dark) and (prefers-reduced-motion: reduce)" srcset="assets/profile/winnow-dark.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/profile/winnow-light.png" />
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/profile/winnow-mobile-dark.gif" />
+  <source media="(max-width: 640px)" srcset="assets/profile/winnow-mobile-light.gif" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/winnow-dark.gif" />
+  <img src="assets/profile/winnow-light.gif" alt="Illustrated Winnow flow: GitHub, Hacker News and Stack Exchange sources feed an evidence trail, which supports a source-linked project idea." width="100%" loading="lazy" />
+</picture>
 
 <details>
 <summary><strong>Also built</strong> · games, live tools, web platforms and automation</summary>
@@ -71,6 +105,17 @@ Entries without repository links are private projects.
 
 I package engineering discipline into reusable skills, so the workflow carries the requirements instead of relying on memory. The spec chain follows the same acceptance criterion from definition through implementation, drift checks and refactoring.
 
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark) and (prefers-reduced-motion: reduce)" srcset="assets/profile/process-mobile-dark.png" />
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="assets/profile/process-mobile-light.png" />
+  <source media="(prefers-color-scheme: dark) and (prefers-reduced-motion: reduce)" srcset="assets/profile/process-dark.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/profile/process-light.png" />
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="assets/profile/process-mobile-dark.gif" />
+  <source media="(max-width: 640px)" srcset="assets/profile/process-mobile-light.gif" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/process-dark.gif" />
+  <img src="assets/profile/process-light.gif" alt="The same acceptance criterion, AC-###, travels through constitution, spec, tasks, implementation, drift checking and refactoring." width="100%" loading="lazy" />
+</picture>
+
 - [**spec-architect**](https://github.com/DahanItamar/spec-architect) — six stages with stable acceptance criteria, cited and verified throughout the work.
 - [**readme-architect**](https://github.com/DahanItamar/readme-architect) — documentation built from running the project and observing its actual behavior.
 - [**uilint**](https://github.com/DahanItamar/uilint) — checks loading, empty, error, success and partial UI states, including the cases that cause silent user harm.
@@ -92,10 +137,30 @@ I package engineering discipline into reusable skills, so the workflow carries t
 
 </details>
 
+## Contributions
+
+<details>
+<summary>Contribution graph</summary>
+
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DahanItamar/DahanItamar/output/pacman-contribution-graph-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/DahanItamar/DahanItamar/output/pacman-contribution-graph.svg" />
+  <img alt="Pac-Man eating my contribution graph" src="https://raw.githubusercontent.com/DahanItamar/DahanItamar/output/pacman-contribution-graph.svg" width="100%" loading="lazy" />
+</picture>
+
+</details>
+
 ---
 
 **Explore the work. Start a conversation.**
 
 [itamardahan1111d@gmail.com](mailto:itamardahan1111d@gmail.com)
 
-[Previous README](archive/README-2026-10-06-before-redesign.md) · [Restore instructions](RESTORE.md)
+<details>
+<summary>Profile options</summary>
+
+[View without motion](STATIC.md) · [Previous README](archive/README-2026-10-06-before-redesign.md) · [Restore instructions](RESTORE.md)
+
+</details>

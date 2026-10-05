@@ -1,5 +1,7 @@
 # Profile visuals
 
+These diagrams belong to the first preview, retained for restoration. The current profile uses the [finished portfolio poster](../portfolio-poster.md). Run `python scripts/build_poster_readme.py` from the repository root to rebuild its README and native-text alternative.
+
 Original diagrams for Itamar Dahan's profile, generated from geometry and text by [`scripts/build_profile_assets.py`](../../scripts/build_profile_assets.py). They illustrate product behavior; they are not screenshots, benchmarks, or evidence of a live deployment.
 
 - Hero: useful systems and dependable engineering.

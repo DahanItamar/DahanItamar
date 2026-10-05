@@ -7,6 +7,8 @@ The original README is preserved in two places:
 - [`archive/README-2026-10-06-before-redesign.md`](archive/README-2026-10-06-before-redesign.md): an exact file copy.
 - Git tag `profile-before-systems-redesign-2026-10-06`, pointing to commit `6a1af52dea27fa28f430be8b79e42772905214a7`.
 
+The first redesign preview is also retained in [`archive/README-2026-10-06-first-preview.md`](archive/README-2026-10-06-first-preview.md), matching the README at commit `a02d2ff`. The poster revision adds another commit without removing either earlier version.
+
 To restore the original profile after merging the redesign, create a new commit:
 
 ```sh
