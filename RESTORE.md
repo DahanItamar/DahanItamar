@@ -9,6 +9,8 @@ The original README is preserved in two places:
 
 The first redesign preview is also retained in [`archive/README-2026-10-06-first-preview.md`](archive/README-2026-10-06-first-preview.md), matching the README at commit `a02d2ff`. The poster revision adds another commit without removing either earlier version.
 
+The poster preview is retained in [`archive/README-2026-10-06-poster-preview.md`](archive/README-2026-10-06-poster-preview.md), matching commit `c4671b0`. The component-based README appends another version, keeping the poster artwork and all previous commits.
+
 To restore the original profile after merging the redesign, create a new commit:
 
 ```sh

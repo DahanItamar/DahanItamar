@@ -1,55 +1,63 @@
-<a href="assets/portfolio-poster.png">
-  <img src="assets/portfolio-poster.png" width="100%" alt="Itamar Dahan — I build useful systems. Then make them dependable. Engineering portfolio featuring DockNest encrypted backup and isolated recovery, Slotline database-enforced booking, Winnow evidence-linked ideas, the six-stage spec workflow, House Rules, GitCheckup and HeWordle. Full project descriptions and links are available below and in the text version." />
-</a>
+<img src="assets/components/header.svg" width="100%" alt="Itamar Dahan — full-stack development, automation and AI-assisted engineering" />
 
-[Open the poster](assets/portfolio-poster.png) · [Read the text version](STATIC.md) · [Start a conversation](mailto:itamardahan1111d@gmail.com)
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/components/typing-still.svg" />
+  <img src="assets/components/typing.svg" width="100%" alt="I build useful systems. Then make them dependable." />
+</picture>
 
-**Explore:** [Slotline](https://github.com/DahanItamar/Slotline) · [Winnow](https://github.com/DahanItamar/Winnow) · [House Rules](https://github.com/DahanItamar/HouseRules) · [GitCheckup](https://github.com/DahanItamar/GitCheckup) · [HeWordle](https://github.com/DahanItamar/HeWordle)
+<p align="center">
+  <a href="#selected-systems">Selected systems</a> · <a href="#how-i-build">How I build</a> · <a href="mailto:itamardahan1111d@gmail.com">Start a conversation</a>
+</p>
 
-**Skills:** [spec-architect](https://github.com/DahanItamar/spec-architect) · [readme-architect](https://github.com/DahanItamar/readme-architect) · [uilint](https://github.com/DahanItamar/uilint) · [acsm](https://github.com/DahanItamar/acsm)
+<p align="center"><strong>Readable architecture. Secure defaults. Accessible interfaces.</strong></p>
 
-<details>
-<summary><strong>Read the project details and full portfolio</strong></summary>
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/components/stack-dark.svg" />
+  <img src="assets/components/stack-light.svg" width="520" alt="TypeScript, JavaScript, React, Node.js, C#, .NET, PostgreSQL, SQLite, Docker and Git" />
+</picture>
+</p>
 
-# Itamar Dahan
+## Selected systems
 
-**I build useful systems. Then make them dependable.**
+<img src="assets/components/docknest-banner.png" width="100%" alt="DockNest — private project in controlled beta. Backups are only useful if recovery works. Docker sites become encrypted SFTP archives and isolated recovery environments." />
 
-Full-stack development · Automation · AI-assisted engineering
+**DockNest** is my self-hosted backup and recovery system. It packages encrypted backups on SFTP and restores isolated private copies, with recovery evidence and an independently encrypted manager recovery kit. **Private · controlled beta.**
 
-[Explore the systems](#selected-work) · [How I build](#skills-for-ai-coding-agents) · [Start a conversation](mailto:itamardahan1111d@gmail.com)
+<p>
+  <a href="https://github.com/DahanItamar/Slotline"><img src="assets/components/slotline-card.svg" width="410" alt="Slotline — database-enforced reservations, tenant isolation and live calendars. TypeScript, Fastify, PostgreSQL." /></a>
+  <a href="https://github.com/DahanItamar/Winnow"><img src="assets/components/winnow-card.svg" width="410" alt="Winnow — local-first project ideas grounded in developer complaints and original sources. Electron, React, SQLite." /></a>
+</p>
 
-## About
+<p>
+  <a href="https://github.com/DahanItamar/HouseRules"><img src="assets/components/houserules-card.svg" width="410" alt="House Rules — offline casino adventure with nine cabinets and four rooms, built with Godot." /></a>
+  <a href="https://github.com/DahanItamar/GitCheckup"><img src="assets/components/gitcheckup-card.svg" width="410" alt="GitCheckup — repository health scores and ranked fixes. TypeScript, Next.js." /></a>
+</p>
 
-I build applications end to end: server, data and interface. My work spans developer tooling, desktop software, scheduling systems, games and intelligent automation. I care about what happens after the first successful demo: readable architecture, secure defaults, accessible interfaces and a clear path to maintaining the system.
+[Play House Rules](https://houserules.itamardahan.com/) · [Try GitCheckup](https://gitcheckup.com) · [Play HeWordle](https://wordlehebrew.com)
 
-AI is part of both the engineering process and the products I build. I work with Claude Code, Codex and LLM-assisted workflows for architecture, implementation, review and testing; I also build automations with n8n and LLM APIs that connect services and turn repeated manual work into dependable processes.
+## How I build
 
-## Selected Work
+<picture>
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="assets/components/process-mobile-still.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/components/process-still.svg" />
+  <source media="(max-width: 640px)" srcset="assets/components/process-mobile.svg" />
+  <img src="assets/components/process.svg" width="100%" alt="The same acceptance criterion stays traceable through constitution, spec, tasks, implementation, drift checking and refactoring." />
+</picture>
 
-### DockNest
+I turn engineering workflows into reusable skills for AI coding agents:
 
-**Backups are only useful if recovery works.**
+- [**spec-architect**](https://github.com/DahanItamar/spec-architect) — six stages with stable, verified acceptance criteria.
+- [**readme-architect**](https://github.com/DahanItamar/readme-architect) — documentation grounded in running the project.
+- [**uilint**](https://github.com/DahanItamar/uilint) — checks loading, empty, error, success and partial interface states.
+- [**acsm**](https://github.com/DahanItamar/acsm) — routes projects to applicable security and compliance obligations, with citations.
 
-A self-hosted system for discovering Docker and static sites, scheduling backups, storing authenticated encrypted packages on SFTP, and restoring isolated private copies. Recovery evidence and an independently encrypted manager recovery kit are part of the design.
+## Contribution activity
 
-<samp>Private project · controlled beta · Node.js · SQLite · Docker · SFTP</samp>
-
-### [Slotline](https://github.com/DahanItamar/Slotline)
-
-**One resource. One booking.**
-
-A multi-tenant booking system for rooms, equipment and consultants. A PostgreSQL exclusion constraint prevents overlapping reservations at the database boundary. Row-level security isolates tenants; server-sent events keep calendars current.
-
-<samp>TypeScript · Fastify · PostgreSQL</samp>
-
-### [Winnow](https://github.com/DahanItamar/Winnow)
-
-**Ideas with evidence.**
-
-A local-first desktop app that turns developer complaints from eight public sources into project ideas linked to the original threads. Semantic deduplication folds repeated complaints together while keeping their evidence.
-
-<samp>TypeScript · Electron · React · SQLite</samp>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DahanItamar/DahanItamar/output/pacman-contribution-graph-dark.svg" />
+  <img src="https://raw.githubusercontent.com/DahanItamar/DahanItamar/output/pacman-contribution-graph.svg" width="100%" alt="Pac-Man eating my GitHub contribution graph, generated from my contribution activity." />
+</picture>
 
 <details>
 <summary><strong>Also built</strong> · games, live tools, web platforms and automation</summary>
@@ -76,16 +84,12 @@ Entries without repository links are private projects.
 
 </details>
 
-## Skills for AI coding agents
+<details>
+<summary><strong>About and engineering principles</strong></summary>
 
-**How I build: a requirement stays a requirement.**
+I build applications end to end: server, data and interface. My work spans developer tooling, desktop software, scheduling systems, games and intelligent automation. I care about what happens after the first successful demo: readable architecture, secure defaults, accessible interfaces and a clear path to maintaining the system.
 
-I package engineering discipline into reusable skills, so the workflow carries the requirements instead of relying on memory. The spec chain follows the same acceptance criterion from definition through implementation, drift checks and refactoring.
-
-- [**spec-architect**](https://github.com/DahanItamar/spec-architect) — six stages with stable acceptance criteria, cited and verified throughout the work.
-- [**readme-architect**](https://github.com/DahanItamar/readme-architect) — documentation built from running the project and observing its actual behavior.
-- [**uilint**](https://github.com/DahanItamar/uilint) — checks loading, empty, error, success and partial UI states, including the cases that cause silent user harm.
-- [**acsm**](https://github.com/DahanItamar/acsm) — routes projects to the security and compliance obligations that apply, with citations carried into the audit.
+AI is part of both the engineering process and the products I build. I work with Claude Code, Codex and LLM-assisted workflows for architecture, implementation, review and testing; I also build automations with n8n and LLM APIs that connect services and turn repeated manual work into dependable processes.
 
 <details>
 <summary><strong>Engineering principles and stack</strong></summary>
@@ -103,27 +107,17 @@ I package engineering discipline into reusable skills, so the workflow carries t
 
 </details>
 
+</details>
+
 ---
 
 **Explore the work. Start a conversation.**
 
 [itamardahan1111d@gmail.com](mailto:itamardahan1111d@gmail.com)
 
-</details>
-
 <details>
-<summary>Contribution graph</summary>
+<summary>Poster, text version, components and previous versions</summary>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DahanItamar/DahanItamar/output/pacman-contribution-graph-dark.svg" />
-  <img alt="Pac-Man eating my contribution graph" src="https://raw.githubusercontent.com/DahanItamar/DahanItamar/output/pacman-contribution-graph.svg" width="100%" />
-</picture>
-
-</details>
-
-<details>
-<summary>Previous versions and restoration</summary>
-
-[Original README](archive/README-2026-10-06-before-redesign.md) · [First preview](archive/README-2026-10-06-first-preview.md) · [Restore instructions](RESTORE.md)
+[Portfolio poster](assets/portfolio-poster.png) · [Text version](STATIC.md) · [README components and credits](assets/components/README.md) · [Original README](archive/README-2026-10-06-before-redesign.md) · [Poster preview](archive/README-2026-10-06-poster-preview.md) · [Restore instructions](RESTORE.md)
 
 </details>

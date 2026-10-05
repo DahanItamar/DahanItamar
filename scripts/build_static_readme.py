@@ -6,6 +6,9 @@ import runpy
 
 root = Path(__file__).resolve().parents[1]
 readme = (root / "README.md").read_text(encoding="utf-8")
+if 'assets/components/header.svg' in readme:
+    runpy.run_path(str(root / 'scripts' / 'build_component_readme.py'), run_name='__main__')
+    raise SystemExit(0)
 if 'assets/portfolio-poster.png' in readme:
     runpy.run_path(str(root / 'scripts' / 'build_poster_readme.py'), run_name='__main__')
     raise SystemExit(0)

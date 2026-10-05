@@ -1,12 +1,12 @@
 # Portfolio poster
 
-`portfolio-poster.png` is the finished, static version of the approved portfolio concept. Its dark visual style is intentional in both GitHub themes. It contains illustrative product diagrams, not screenshots or deployment evidence.
+`portfolio-poster.png` is the finished, static version of the approved portfolio concept, retained as a separate poster. The current README uses [GitHub-native components](components/README.md). The poster's dark visual style is intentional in both GitHub themes. It contains illustrative product diagrams, not screenshots or deployment evidence.
 
 The README keeps clickable project links and the full native Markdown catalogue below the poster. `STATIC.md` is the text alternative, including every existing project and skill. GitHub's surrounding page layout is not part of the poster.
 
 Created with the built-in image generation tool on 2026-10-06, editing the approved reference. No animation or SVG overlay is required. Earlier preview assets remain in Git history and the original README has an exact archive and restoration tag.
 
-Rebuild the README text with `python scripts/build_poster_readme.py`. The following prompt documents how the poster was produced; the text builder does not alter the image.
+Rebuild the current README with `python scripts/build_component_readme.py`. The earlier poster renderer, `scripts/build_poster_readme.py`, recreates the archived poster preview. The following prompt documents how the poster was produced; neither text builder alters the image.
 
 ## Image prompt
 
