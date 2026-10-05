@@ -1,11 +1,12 @@
 # Profile components
 
-The profile uses composable GitHub README graphics, with the poster's graphite and lime palette. The generated header, typing and icon SVGs are stored in this repository, so viewing the README does not depend on those generators being online.
+The profile opens with centered, static native headings and text, using GitHub's own font, heading sizes and page background. The project graphics retain the poster's graphite and lime palette. Icon SVGs are stored in this repository, so viewing them does not depend on the generator being online.
 
 | Component | Source | Setup |
 |:--|:--|:--|
-| Header with a short fade | [kyechan99/capsule-render](https://github.com/kyechan99/capsule-render) | Generated SVG; parameters in `sources.json`. |
-| Typing headline | [DenverCoder1/readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg) | Generated SVG; runs once for 4.4 seconds. Static source selected for reduced motion. |
+| Name, subtitle and headline | Native HTML headings/text | Static, centered, without an image or custom background. GitHub controls the font and heading sizes. |
+| Archived header graphic | [kyechan99/capsule-render](https://github.com/kyechan99/capsule-render) | Retained from the previous preview; not embedded in the current README. Parameters in `sources.json`. |
+| Archived typing graphic | [DenverCoder1/readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg) | Retained from the previous preview; not embedded in the current README. |
 | Technology icons | [tandpfun/skill-icons](https://github.com/tandpfun/skill-icons) | Generated dark/light SVGs for the profile's existing stack. |
 | Contribution game | [abozanona/pacman-contribution-graph](https://github.com/abozanona/pacman-contribution-graph) | Existing daily workflow and `output` branch, retained unchanged. |
 | Repository cards | Original SVGs | Inspired by the clickable card pattern in [github-readme-stats](https://github.com/anuraghazra/github-readme-stats); no code copied and no statistics invented. |

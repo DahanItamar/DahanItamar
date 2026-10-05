@@ -1,9 +1,8 @@
-<img src="assets/components/header.svg" width="100%" alt="Itamar Dahan — full-stack development, automation and AI-assisted engineering" />
+<h1 align="center">ITAMAR DAHAN</h1>
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/components/typing-still.svg" />
-  <img src="assets/components/typing.svg" width="100%" alt="I build useful systems. Then make them dependable." />
-</picture>
+<p align="center"><strong>Full-stack development · Automation · AI-assisted engineering</strong></p>
+
+<h2 align="center">I build useful systems.<br />Then make them dependable.</h2>
 
 <p align="center">
   <a href="#selected-systems">Selected systems</a> · <a href="#how-i-build">How I build</a> · <a href="mailto:itamardahan1111d@gmail.com">Start a conversation</a>
