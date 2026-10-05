@@ -5,7 +5,7 @@
 <h2 align="center">I build useful systems.<br />Then make them dependable.</h2>
 
 <p align="center">
-  <a href="https://itamardahan.com/">Website</a> · <a href="#selected-systems">Selected systems</a> · <a href="#my-signature">My signature</a>
+  <a href="https://itamardahan.com/">Website</a> · <a href="#selected-systems">Selected systems</a>
 </p>
 
 <p align="center"><strong>Readable architecture. Secure defaults. Accessible interfaces.</strong></p>
@@ -48,12 +48,6 @@
   <a href="https://github.com/DahanItamar/Winnow"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/winnow-card.svg" /><img src="assets/components/winnow-card-light.svg" width="48%" alt="Winnow — local-first project ideas grounded in developer complaints and original sources. Electron, React, SQLite." /></picture></a>
   <a href="https://github.com/DahanItamar/HouseRules"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/houserules-card.svg" /><img src="assets/components/houserules-card-light.svg" width="48%" alt="House Rules — offline casino adventure with nine cabinets and four rooms, built with Godot." /></picture></a>
 </p>
-
-## My signature
-
-**Recovery you can test. Decisions you can trace.**
-
-My projects leave something you can check: a restored backup, a booking protected by the database, or an idea with its original source attached. I also build for life away from the cloud, with local-first tools and games that run offline.
 
 ## Contribution activity
 

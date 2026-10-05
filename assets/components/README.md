@@ -21,7 +21,7 @@ Every badge is a separate SVG with its own icon, name and accessible alternative
 
 The AI row reflects the owner's coding workflow and project documentation: Claude Code in ReelScribe and the agent skills, Codex in the coding workflow, Gemini in SmartDataMatcher, and n8n for automation. These identify tools used, not endorsements. Private project documentation is not copied into this repository.
 
-The whole poster is retained as a separate artifact. The profile presents the owner's [website](https://itamardahan.com/) near the top, four selected systems, a short native-text "My signature" section and contribution activity. The signature connects the featured projects through verifiable recovery, database-protected bookings, traceable sources, local-first tools and offline games. The engineering workflow graphic, long project catalogue, skills list, About/principles sections and closing contact link are retained in previous versions rather than displayed in the current README. The text alternative follows the same selection and signature text. No JavaScript, iframe, private repository token or new deployment is required.
+The whole poster is retained as a separate artifact. The profile presents the owner's [website](https://itamardahan.com/) near the top, four selected systems and contribution activity. Removed sections and the closing contact link remain available in previous versions. The text alternative follows the same selection. No JavaScript, iframe, private repository token or new deployment is required.
 
 ## Rebuild
 

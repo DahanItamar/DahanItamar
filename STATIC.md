@@ -48,12 +48,6 @@ Nine casino cabinets. Four rooms. An offline adventure built with Godot.
 
 Godot 4 · GDScript
 
-## My signature
-
-**Recovery you can test. Decisions you can trace.**
-
-My projects leave something you can check: a restored backup, a booking protected by the database, or an idea with its original source attached. I also build for life away from the cloud, with local-first tools and games that run offline.
-
 ## Contribution activity
 
 My GitHub contribution graph appears in the profile.

@@ -111,13 +111,6 @@ for mobile in [False, True]:
     (OUT / f'process{suffix}.svg').write_text(svg(width, height, body, 'One acceptance criterion through constitution, spec, tasks, implement, drift and refactor.'), encoding='utf-8')
     (OUT / f'process{suffix}-still.svg').write_text(svg(width, height, body.replace(animation, ''), 'One acceptance criterion through constitution, spec, tasks, implement, drift and refactor.'), encoding='utf-8')
 
-signature = '''## My signature
-
-**Recovery you can test. Decisions you can trace.**
-
-My projects leave something you can check: a restored backup, a booking protected by the database, or an idea with its original source attached. I also build for life away from the cloud, with local-first tools and games that run offline.
-'''
-
 readme = '''<h1 align="center">ITAMAR DAHAN</h1>
 
 <p align="center"><strong>Full-stack development · Automation · AI-assisted engineering</strong></p>
@@ -125,7 +118,7 @@ readme = '''<h1 align="center">ITAMAR DAHAN</h1>
 <h2 align="center">I build useful systems.<br />Then make them dependable.</h2>
 
 <p align="center">
-  <a href="https://itamardahan.com/">Website</a> · <a href="#selected-systems">Selected systems</a> · <a href="#my-signature">My signature</a>
+  <a href="https://itamardahan.com/">Website</a> · <a href="#selected-systems">Selected systems</a>
 </p>
 
 <p align="center"><strong>Readable architecture. Secure defaults. Accessible interfaces.</strong></p>
@@ -150,8 +143,6 @@ readme = '''<h1 align="center">ITAMAR DAHAN</h1>
   <a href="https://github.com/DahanItamar/HouseRules"><img src="assets/components/houserules-card.svg" width="48%" alt="House Rules — offline casino adventure with nine cabinets and four rooms, built with Godot." /></a>
 </p>
 
-{signature}
-
 ## Contribution activity
 
 <picture>
@@ -162,7 +153,6 @@ readme = '''<h1 align="center">ITAMAR DAHAN</h1>
 '''
 readme = readme.replace('{development_badges}', badge_row(badges[:5]) + '\n\n' + badge_row(badges[5:10]))
 readme = readme.replace('{ai_badges}', badge_row(badges[10:]))
-readme = readme.replace('{signature}', signature.rstrip())
 readme = re.sub(r'<img src="(assets/components/[^\"]+-card\.svg)" width="48%" alt="([^\"]+)" />', lambda match: themed_image(match[1], '48%', match[2]), readme)
 (ROOT / 'README.md').write_text(readme.rstrip() + '\n', encoding='utf-8', newline='\n')
 
@@ -185,5 +175,5 @@ native += '## Selected systems\n\n'
 for name, _, headline, description, stack in cards[:4]:
     title = 'House Rules' if name == 'HouseRules' else name
     native += f'### [{title}](https://github.com/DahanItamar/{name})\n\n**{headline}**\n\n' + ' '.join(description) + f'\n\n{stack}\n\n'
-native += signature + '\n## Contribution activity\n\nMy GitHub contribution graph appears in the profile.\n'
+native += '## Contribution activity\n\nMy GitHub contribution graph appears in the profile.\n'
 (ROOT / 'STATIC.md').write_text(native, encoding='utf-8', newline='\n')
