@@ -14,13 +14,13 @@ AI is part of both the engineering process and the products I build. I work with
 
 ## Selected Work
 
-### DockNest
+### [DockNest](https://github.com/DahanItamar/DockNest)
 
 **Backups are only useful if recovery works.**
 
 A self-hosted system for discovering Docker and static sites, scheduling backups, storing authenticated encrypted packages on SFTP, and restoring isolated private copies. Recovery evidence and an independently encrypted manager recovery kit are part of the design.
 
-<samp>Private project · controlled beta · Node.js · SQLite · Docker · SFTP</samp>
+<samp>Node.js · SQLite · Docker · SFTP</samp>
 
 ### [Slotline](https://github.com/DahanItamar/Slotline)
 
@@ -45,9 +45,9 @@ A local-first desktop app that turns developer complaints from eight public sour
 
 | Project | What it does | Stack |
 |:--|:--|:--|
-| [**House Rules**](https://github.com/DahanItamar/HouseRules) | An offline casino adventure with nine playable cabinets and four connected rooms, built as a human-directed, AI-assisted game-development experiment. [Case study](https://houserules.itamardahan.com/). | <samp>Godot 4 · GDScript</samp> |
-| [**GitCheckup**](https://github.com/DahanItamar/GitCheckup) | Scores public repositories across docs, community, activity, popularity and hygiene, with a ranked list of fixes. [Try it](https://gitcheckup.com). | <samp>TypeScript · Next.js</samp> |
-| [**HeWordle**](https://github.com/DahanItamar/HeWordle) | Daily Hebrew Wordle with accounts, streaks and a leaderboard; zero npm dependencies and encrypted answers. [Play](https://wordlehebrew.com). | <samp>Node.js · SQLite</samp> |
+| [**House Rules**](https://github.com/DahanItamar/HouseRules) | An offline casino adventure with nine playable cabinets and four connected rooms, built as a human-directed, AI-assisted game-development experiment. | <samp>Godot 4 · GDScript</samp> |
+| [**GitCheckup**](https://github.com/DahanItamar/GitCheckup) | Scores public repositories across docs, community, activity, popularity and hygiene, with a ranked list of fixes. | <samp>TypeScript · Next.js</samp> |
+| [**HeWordle**](https://github.com/DahanItamar/HeWordle) | Daily Hebrew Wordle with accounts, streaks and a leaderboard; zero npm dependencies and encrypted answers. | <samp>Node.js · SQLite</samp> |
 | [**Meridian**](https://github.com/DahanItamar/meridian-landing) | A bilingual EN/HE landing page for a premium espresso grinder, with RTL support and a spec-driven accessibility process. [Visit](https://meridian.itamardahan.com/). | <samp>TypeScript · Next.js · Tailwind</samp> |
 | [**Dealership Platform**](https://github.com/DahanItamar/dealership-platform) | A white-label bilingual car-dealership platform: showroom, financing, leads and an admin back office, with an in-memory demo mode. | <samp>TypeScript · TanStack · Supabase</samp> |
 | [**Airport Simulator**](https://github.com/DahanItamar/AirportSimulator) | Real-time airport simulation with arrivals, departures and shared runway/gate queues, visible in a zero-dependency control-tower UI. | <samp>C# · ASP.NET Core · JS</samp> |
@@ -59,7 +59,6 @@ A local-first desktop app that turns developer complaints from eight public sour
 | **Shift Harmony** | Team shift planning and scheduling through a component-driven interface. | <samp>React · TypeScript · Cloudflare</samp> |
 | **PulseOps** | A self-hosted real-time operations console for a single Docker engine. | <samp>TypeScript</samp> |
 
-Entries without repository links are private projects.
 
 </details>
 

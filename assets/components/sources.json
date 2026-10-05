@@ -2,5 +2,9 @@
   "header.svg": "https://capsule-render.vercel.app/api?type=rect&color=101419&height=180&text=ITAMAR%20DAHAN&fontSize=52&fontColor=F0F2EB&fontAlign=50&fontAlignY=42&desc=Full-stack%20development%20-%20Automation%20-%20AI-assisted%20engineering&descSize=17&descAlignY=73&animation=fadeIn",
   "typing.svg": "https://readme-typing-svg.demolab.com/?font=Geist&weight=600&size=30&duration=1800&pause=400&color=C6F27F&background=101419&center=true&vCenter=true&width=900&height=95&lines=I+build+useful+systems.;Then+make+them+dependable.&repeat=false&multiline=true",
   "stack-dark.svg": "https://skillicons.dev/icons?i=ts,js,react,nodejs,cs,dotnet,postgres,sqlite,docker,git&theme=dark&perline=10",
-  "stack-light.svg": "https://skillicons.dev/icons?i=ts,js,react,nodejs,cs,dotnet,postgres,sqlite,docker,git&theme=light&perline=10"
+  "stack-light.svg": "https://skillicons.dev/icons?i=ts,js,react,nodejs,cs,dotnet,postgres,sqlite,docker,git&theme=light&perline=10",
+  "claudecode-color.svg": "https://raw.githubusercontent.com/lobehub/lobe-icons/82e641b4fece9d1028a127149af9ded00df5ac0c/packages/static-svg/icons/claudecode-color.svg",
+  "codex-color.svg": "https://raw.githubusercontent.com/lobehub/lobe-icons/82e641b4fece9d1028a127149af9ded00df5ac0c/packages/static-svg/icons/codex-color.svg",
+  "gemini-color.svg": "https://raw.githubusercontent.com/lobehub/lobe-icons/82e641b4fece9d1028a127149af9ded00df5ac0c/packages/static-svg/icons/gemini-color.svg",
+  "n8n-color.svg": "https://raw.githubusercontent.com/lobehub/lobe-icons/82e641b4fece9d1028a127149af9ded00df5ac0c/packages/static-svg/icons/n8n-color.svg"
 }

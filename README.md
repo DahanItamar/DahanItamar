@@ -10,6 +10,8 @@
 
 <p align="center"><strong>Readable architecture. Secure defaults. Accessible interfaces.</strong></p>
 
+<p align="center"><strong>Development</strong></p>
+
 <p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/components/stack-dark.svg" />
@@ -17,11 +19,22 @@
 </picture>
 </p>
 
+<p align="center"><strong>AI &amp; automation</strong></p>
+
+<p align="center">
+  <img src="assets/components/claudecode-color.svg" width="48" height="48" alt="Claude Code" /> &nbsp;&nbsp;
+  <img src="assets/components/codex-color.svg" width="48" height="48" alt="Codex" /> &nbsp;&nbsp;
+  <img src="assets/components/gemini-color.svg" width="48" height="48" alt="Gemini" /> &nbsp;&nbsp;
+  <img src="assets/components/n8n-color.svg" width="48" height="48" alt="n8n" />
+</p>
+
+<p align="center">Claude Code · Codex · Gemini · n8n</p>
+
 ## Selected systems
 
-<img src="assets/components/docknest-banner.png" width="100%" alt="DockNest — private project in controlled beta. Backups are only useful if recovery works. Docker sites become encrypted SFTP archives and isolated recovery environments." />
+<a href="https://github.com/DahanItamar/DockNest"><img src="assets/components/docknest-banner.png" width="100%" alt="DockNest — backups are only useful if recovery works. Docker sites become encrypted SFTP archives and isolated recovery environments." /></a>
 
-**DockNest** is my self-hosted backup and recovery system. It packages encrypted backups on SFTP and restores isolated private copies, with recovery evidence and an independently encrypted manager recovery kit. **Private · controlled beta.**
+[**DockNest**](https://github.com/DahanItamar/DockNest) is my self-hosted backup and recovery system. It packages encrypted backups on SFTP and restores isolated copies, with recovery evidence and an independently encrypted manager recovery kit.
 
 <p>
   <a href="https://github.com/DahanItamar/Slotline"><img src="assets/components/slotline-card.svg" width="410" alt="Slotline — database-enforced reservations, tenant isolation and live calendars. TypeScript, Fastify, PostgreSQL." /></a>
@@ -32,8 +45,6 @@
   <a href="https://github.com/DahanItamar/HouseRules"><img src="assets/components/houserules-card.svg" width="410" alt="House Rules — offline casino adventure with nine cabinets and four rooms, built with Godot." /></a>
   <a href="https://github.com/DahanItamar/GitCheckup"><img src="assets/components/gitcheckup-card.svg" width="410" alt="GitCheckup — repository health scores and ranked fixes. TypeScript, Next.js." /></a>
 </p>
-
-[Play House Rules](https://houserules.itamardahan.com/) · [Try GitCheckup](https://gitcheckup.com) · [Play HeWordle](https://wordlehebrew.com)
 
 ## How I build
 
@@ -65,9 +76,9 @@ I turn engineering workflows into reusable skills for AI coding agents:
 
 | Project | What it does | Stack |
 |:--|:--|:--|
-| [**House Rules**](https://github.com/DahanItamar/HouseRules) | An offline casino adventure with nine playable cabinets and four connected rooms, built as a human-directed, AI-assisted game-development experiment. [Case study](https://houserules.itamardahan.com/). | <samp>Godot 4 · GDScript</samp> |
-| [**GitCheckup**](https://github.com/DahanItamar/GitCheckup) | Scores public repositories across docs, community, activity, popularity and hygiene, with a ranked list of fixes. [Try it](https://gitcheckup.com). | <samp>TypeScript · Next.js</samp> |
-| [**HeWordle**](https://github.com/DahanItamar/HeWordle) | Daily Hebrew Wordle with accounts, streaks and a leaderboard; zero npm dependencies and encrypted answers. [Play](https://wordlehebrew.com). | <samp>Node.js · SQLite</samp> |
+| [**House Rules**](https://github.com/DahanItamar/HouseRules) | An offline casino adventure with nine playable cabinets and four connected rooms, built as a human-directed, AI-assisted game-development experiment. | <samp>Godot 4 · GDScript</samp> |
+| [**GitCheckup**](https://github.com/DahanItamar/GitCheckup) | Scores public repositories across docs, community, activity, popularity and hygiene, with a ranked list of fixes. | <samp>TypeScript · Next.js</samp> |
+| [**HeWordle**](https://github.com/DahanItamar/HeWordle) | Daily Hebrew Wordle with accounts, streaks and a leaderboard; zero npm dependencies and encrypted answers. | <samp>Node.js · SQLite</samp> |
 | [**Meridian**](https://github.com/DahanItamar/meridian-landing) | A bilingual EN/HE landing page for a premium espresso grinder, with RTL support and a spec-driven accessibility process. [Visit](https://meridian.itamardahan.com/). | <samp>TypeScript · Next.js · Tailwind</samp> |
 | [**Dealership Platform**](https://github.com/DahanItamar/dealership-platform) | A white-label bilingual car-dealership platform: showroom, financing, leads and an admin back office, with an in-memory demo mode. | <samp>TypeScript · TanStack · Supabase</samp> |
 | [**Airport Simulator**](https://github.com/DahanItamar/AirportSimulator) | Real-time airport simulation with arrivals, departures and shared runway/gate queues, visible in a zero-dependency control-tower UI. | <samp>C# · ASP.NET Core · JS</samp> |
@@ -79,7 +90,6 @@ I turn engineering workflows into reusable skills for AI coding agents:
 | **Shift Harmony** | Team shift planning and scheduling through a component-driven interface. | <samp>React · TypeScript · Cloudflare</samp> |
 | **PulseOps** | A self-hosted real-time operations console for a single Docker engine. | <samp>TypeScript</samp> |
 
-Entries without repository links are private projects.
 
 </details>
 
@@ -113,10 +123,3 @@ AI is part of both the engineering process and the products I build. I work with
 **Explore the work. Start a conversation.**
 
 [itamardahan1111d@gmail.com](mailto:itamardahan1111d@gmail.com)
-
-<details>
-<summary>Poster, text version, components and previous versions</summary>
-
-[Portfolio poster](assets/portfolio-poster.png) · [Text version](STATIC.md) · [README components and credits](assets/components/README.md) · [Original README](archive/README-2026-10-06-before-redesign.md) · [Poster preview](archive/README-2026-10-06-poster-preview.md) · [Restore instructions](RESTORE.md)
-
-</details>

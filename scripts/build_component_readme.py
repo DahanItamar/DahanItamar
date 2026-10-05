@@ -24,7 +24,6 @@ for name, category, headline, description, stack in cards:
     title = 'House Rules' if name == 'HouseRules' else name
     body = '<rect x=".5" y=".5" width="419" height="189" rx="8" fill="#101419" stroke="#39464d"/>'
     body += f'<text x="22" y="23" fill="#a5b0b9" font-size="10" letter-spacing="2">{category}</text>'
-    body += f'<text x="398" y="23" text-anchor="end" fill="#c6f27f" font-size="10">PUBLIC</text>'
     body += f'<text x="22" y="59" fill="#f0f2eb" font-size="29" font-weight="650">{title}</text>'
     if name == 'Slotline':
         body += '<path d="M329 40H397M329 53H397M329 66H397M344 35V74M370 35V74" stroke="#39464d" fill="none"/><rect x="335" y="42" width="36" height="14" rx="2" fill="#263220" stroke="#c6f27f"/><rect x="355" y="56" width="36" height="14" rx="2" fill="#291d1b" stroke="#ffaaaa"/>'
@@ -37,7 +36,7 @@ for name, category, headline, description, stack in cards:
         body += f'<text x="22" y="{119+i*22}" fill="#bac3cb" font-size="15">{escape(line)}</text>'
     body += '<path d="M22 154H398" stroke="#2b363e"/>'
     body += f'<text x="22" y="176" fill="#a5b0b9" font-size="12">{escape(stack)}</text>'
-    (OUT / f'{name.lower()}-card.svg').write_text(svg(420, 190, body, f'{title}: {headline}'), encoding='utf-8')
+    (OUT / f'{name.lower()}-card.svg').write_text(svg(420, 190, body, f'{title}: {headline}'), encoding='utf-8', newline='\n')
 
 still = '<rect width="900" height="66" rx="5" fill="#101419"/><text x="450" y="40" text-anchor="middle" fill="#c6f27f" font-size="27" font-weight="550">I build useful systems. Then make them dependable.</text>'
 (OUT / 'typing-still.svg').write_text(svg(900, 66, still, 'I build useful systems. Then make them dependable.'), encoding='utf-8')
@@ -61,6 +60,9 @@ for mobile in [False, True]:
 
 source = (ROOT / 'archive' / 'README-2026-10-06-first-preview.md').read_text(encoding='utf-8')
 catalogue = source[source.index('<details>\n<summary><strong>Also built'):source.index('## Skills for AI coding agents')].strip()
+catalogue = catalogue.replace('\nEntries without repository links are private projects.\n', '\n')
+for label, url in [('Case study', 'https://houserules.itamardahan.com/'), ('Try it', 'https://gitcheckup.com'), ('Play', 'https://wordlehebrew.com')]:
+    catalogue = catalogue.replace(f' [{label}]({url}).', '')
 about = source[source.index('## About\n') + len('## About\n'):source.index('## Selected Work')].strip()
 principles = source[source.index('<details>\n<summary><strong>Engineering principles'):source.index('## Contributions')].strip()
 
@@ -76,6 +78,8 @@ readme = '''<h1 align="center">ITAMAR DAHAN</h1>
 
 <p align="center"><strong>Readable architecture. Secure defaults. Accessible interfaces.</strong></p>
 
+<p align="center"><strong>Development</strong></p>
+
 <p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/components/stack-dark.svg" />
@@ -83,11 +87,22 @@ readme = '''<h1 align="center">ITAMAR DAHAN</h1>
 </picture>
 </p>
 
+<p align="center"><strong>AI &amp; automation</strong></p>
+
+<p align="center">
+  <img src="assets/components/claudecode-color.svg" width="48" height="48" alt="Claude Code" /> &nbsp;&nbsp;
+  <img src="assets/components/codex-color.svg" width="48" height="48" alt="Codex" /> &nbsp;&nbsp;
+  <img src="assets/components/gemini-color.svg" width="48" height="48" alt="Gemini" /> &nbsp;&nbsp;
+  <img src="assets/components/n8n-color.svg" width="48" height="48" alt="n8n" />
+</p>
+
+<p align="center">Claude Code · Codex · Gemini · n8n</p>
+
 ## Selected systems
 
-<img src="assets/components/docknest-banner.png" width="100%" alt="DockNest — private project in controlled beta. Backups are only useful if recovery works. Docker sites become encrypted SFTP archives and isolated recovery environments." />
+<a href="https://github.com/DahanItamar/DockNest"><img src="assets/components/docknest-banner.png" width="100%" alt="DockNest — backups are only useful if recovery works. Docker sites become encrypted SFTP archives and isolated recovery environments." /></a>
 
-**DockNest** is my self-hosted backup and recovery system. It packages encrypted backups on SFTP and restores isolated private copies, with recovery evidence and an independently encrypted manager recovery kit. **Private · controlled beta.**
+[**DockNest**](https://github.com/DahanItamar/DockNest) is my self-hosted backup and recovery system. It packages encrypted backups on SFTP and restores isolated copies, with recovery evidence and an independently encrypted manager recovery kit.
 
 <p>
   <a href="https://github.com/DahanItamar/Slotline"><img src="assets/components/slotline-card.svg" width="410" alt="Slotline — database-enforced reservations, tenant isolation and live calendars. TypeScript, Fastify, PostgreSQL." /></a>
@@ -98,8 +113,6 @@ readme = '''<h1 align="center">ITAMAR DAHAN</h1>
   <a href="https://github.com/DahanItamar/HouseRules"><img src="assets/components/houserules-card.svg" width="410" alt="House Rules — offline casino adventure with nine cabinets and four rooms, built with Godot." /></a>
   <a href="https://github.com/DahanItamar/GitCheckup"><img src="assets/components/gitcheckup-card.svg" width="410" alt="GitCheckup — repository health scores and ranked fixes. TypeScript, Next.js." /></a>
 </p>
-
-[Play House Rules](https://houserules.itamardahan.com/) · [Try GitCheckup](https://gitcheckup.com) · [Play HeWordle](https://wordlehebrew.com)
 
 ## How I build
 
@@ -131,13 +144,6 @@ readme += '''---
 **Explore the work. Start a conversation.**
 
 [itamardahan1111d@gmail.com](mailto:itamardahan1111d@gmail.com)
-
-<details>
-<summary>Poster, text version, components and previous versions</summary>
-
-[Portfolio poster](assets/portfolio-poster.png) · [Text version](STATIC.md) · [README components and credits](assets/components/README.md) · [Original README](archive/README-2026-10-06-before-redesign.md) · [Poster preview](archive/README-2026-10-06-poster-preview.md) · [Restore instructions](RESTORE.md)
-
-</details>
 '''
 (ROOT / 'README.md').write_text(readme, encoding='utf-8', newline='\n')
 
@@ -145,4 +151,9 @@ native = re.sub(r'<picture>.*?</picture>\s*', '', source, flags=re.S)
 native = re.sub(r'## Contributions\n.*?\n---\n', '---\n', native, flags=re.S)
 native = native[:native.index('<details>\n<summary>Profile options</summary>')].rstrip()
 native = native.replace('# Itamar Dahan\n', '# Itamar Dahan\n\n**I build useful systems. Then make them dependable.**\n', 1)
+native = native.replace('### DockNest\n', '### [DockNest](https://github.com/DahanItamar/DockNest)\n')
+native = native.replace('Private project · controlled beta · ', '')
+native = native.replace('\nEntries without repository links are private projects.\n', '\n')
+for label, url in [('Case study', 'https://houserules.itamardahan.com/'), ('Try it', 'https://gitcheckup.com'), ('Play', 'https://wordlehebrew.com')]:
+    native = native.replace(f' [{label}]({url}).', '')
 (ROOT / 'STATIC.md').write_text('[← View the profile](README.md)\n\n'+native+'\n', encoding='utf-8', newline='\n')
