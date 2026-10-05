@@ -4,6 +4,8 @@
 
 **Full-stack development · Automation · AI-assisted engineering**
 
+[Website](https://itamardahan.com/)
+
 ## I build useful systems. Then make them dependable.
 
 Readable architecture. Secure defaults. Accessible interfaces.
@@ -46,16 +48,12 @@ Nine casino cabinets. Four rooms. An offline adventure built with Godot.
 
 Godot 4 · GDScript
 
-## How I build
+## My signature
 
-The same acceptance criterion stays traceable through constitution, specification, tasks, implementation, drift checking and refactoring.
+**Recovery you can test. Decisions you can trace.**
+
+My projects leave something you can check: a restored backup, a booking protected by the database, or an idea with its original source attached. I also build for life away from the cloud, with local-first tools and games that run offline.
 
 ## Contribution activity
 
-[View my GitHub contributions](https://github.com/DahanItamar)
-
----
-
-**Explore the work. Start a conversation.**
-
-[itamardahan1111d@gmail.com](mailto:itamardahan1111d@gmail.com)
+My GitHub contribution graph appears in the profile.

@@ -5,7 +5,7 @@
 <h2 align="center">I build useful systems.<br />Then make them dependable.</h2>
 
 <p align="center">
-  <a href="#selected-systems">Selected systems</a> · <a href="#how-i-build">How I build</a> · <a href="mailto:itamardahan1111d@gmail.com">Start a conversation</a>
+  <a href="https://itamardahan.com/">Website</a> · <a href="#selected-systems">Selected systems</a> · <a href="#my-signature">My signature</a>
 </p>
 
 <p align="center"><strong>Readable architecture. Secure defaults. Accessible interfaces.</strong></p>
@@ -49,14 +49,11 @@
   <a href="https://github.com/DahanItamar/HouseRules"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/houserules-card.svg" /><img src="assets/components/houserules-card-light.svg" width="48%" alt="House Rules — offline casino adventure with nine cabinets and four rooms, built with Godot." /></picture></a>
 </p>
 
-## How I build
+## My signature
 
-<picture>
-  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="assets/components/process-mobile-still.svg" />
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/components/process-still.svg" />
-  <source media="(max-width: 640px)" srcset="assets/components/process-mobile.svg" />
-  <img src="assets/components/process.svg" width="100%" alt="The same acceptance criterion stays traceable through constitution, spec, tasks, implementation, drift checking and refactoring." />
-</picture>
+**Recovery you can test. Decisions you can trace.**
+
+My projects leave something you can check: a restored backup, a booking protected by the database, or an idea with its original source attached. I also build for life away from the cloud, with local-first tools and games that run offline.
 
 ## Contribution activity
 
@@ -64,9 +61,3 @@
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DahanItamar/DahanItamar/output/pacman-contribution-graph-dark.svg" />
   <img src="https://raw.githubusercontent.com/DahanItamar/DahanItamar/output/pacman-contribution-graph.svg" width="100%" alt="Pac-Man eating my GitHub contribution graph, generated from my contribution activity." />
 </picture>
-
----
-
-**Explore the work. Start a conversation.**
-
-[itamardahan1111d@gmail.com](mailto:itamardahan1111d@gmail.com)
