@@ -111,14 +111,6 @@ for mobile in [False, True]:
     (OUT / f'process{suffix}.svg').write_text(svg(width, height, body, 'One acceptance criterion through constitution, spec, tasks, implement, drift and refactor.'), encoding='utf-8')
     (OUT / f'process{suffix}-still.svg').write_text(svg(width, height, body.replace(animation, ''), 'One acceptance criterion through constitution, spec, tasks, implement, drift and refactor.'), encoding='utf-8')
 
-source = (ROOT / 'archive' / 'README-2026-10-06-first-preview.md').read_text(encoding='utf-8')
-catalogue = source[source.index('<details>\n<summary><strong>Also built'):source.index('## Skills for AI coding agents')].strip()
-catalogue = catalogue.replace('\nEntries without repository links are private projects.\n', '\n')
-for label, url in [('Case study', 'https://houserules.itamardahan.com/'), ('Try it', 'https://gitcheckup.com'), ('Play', 'https://wordlehebrew.com')]:
-    catalogue = catalogue.replace(f' [{label}]({url}).', '')
-about = source[source.index('## About\n') + len('## About\n'):source.index('## Selected Work')].strip()
-principles = source[source.index('<details>\n<summary><strong>Engineering principles'):source.index('## Contributions')].strip()
-
 readme = '''<h1 align="center">ITAMAR DAHAN</h1>
 
 <p align="center"><strong>Full-stack development · Automation · AI-assisted engineering</strong></p>
@@ -142,17 +134,13 @@ readme = '''<h1 align="center">ITAMAR DAHAN</h1>
 ## Selected systems
 
 <p>
-  <a href="https://github.com/DahanItamar/DockNest"><img src="assets/components/docknest-card.svg" width="410" alt="DockNest — encrypted backups, isolated restores and recovery evidence. Node.js, SQLite, Docker, SFTP." /></a>
-  <a href="https://github.com/DahanItamar/Slotline"><img src="assets/components/slotline-card.svg" width="410" alt="Slotline — database-enforced reservations, tenant isolation and live calendars. TypeScript, Fastify, PostgreSQL." /></a>
+  <a href="https://github.com/DahanItamar/DockNest"><img src="assets/components/docknest-card.svg" width="48%" alt="DockNest — encrypted backups, isolated restores and recovery evidence. Node.js, SQLite, Docker, SFTP." /></a>
+  <a href="https://github.com/DahanItamar/Slotline"><img src="assets/components/slotline-card.svg" width="48%" alt="Slotline — database-enforced reservations, tenant isolation and live calendars. TypeScript, Fastify, PostgreSQL." /></a>
 </p>
 
 <p>
-  <a href="https://github.com/DahanItamar/Winnow"><img src="assets/components/winnow-card.svg" width="410" alt="Winnow — local-first project ideas grounded in developer complaints and original sources. Electron, React, SQLite." /></a>
-  <a href="https://github.com/DahanItamar/HouseRules"><img src="assets/components/houserules-card.svg" width="410" alt="House Rules — offline casino adventure with nine cabinets and four rooms, built with Godot." /></a>
-</p>
-
-<p>
-  <a href="https://github.com/DahanItamar/GitCheckup"><img src="assets/components/gitcheckup-card.svg" width="410" alt="GitCheckup — repository health scores and ranked fixes. TypeScript, Next.js." /></a>
+  <a href="https://github.com/DahanItamar/Winnow"><img src="assets/components/winnow-card.svg" width="48%" alt="Winnow — local-first project ideas grounded in developer complaints and original sources. Electron, React, SQLite." /></a>
+  <a href="https://github.com/DahanItamar/HouseRules"><img src="assets/components/houserules-card.svg" width="48%" alt="House Rules — offline casino adventure with nine cabinets and four rooms, built with Godot." /></a>
 </p>
 
 ## How I build
@@ -164,13 +152,6 @@ readme = '''<h1 align="center">ITAMAR DAHAN</h1>
   <img src="assets/components/process.svg" width="100%" alt="The same acceptance criterion stays traceable through constitution, spec, tasks, implementation, drift checking and refactoring." />
 </picture>
 
-I turn engineering workflows into reusable skills for AI coding agents:
-
-- [**spec-architect**](https://github.com/DahanItamar/spec-architect) — six stages with stable, verified acceptance criteria.
-- [**readme-architect**](https://github.com/DahanItamar/readme-architect) — documentation grounded in running the project.
-- [**uilint**](https://github.com/DahanItamar/uilint) — checks loading, empty, error, success and partial interface states.
-- [**acsm**](https://github.com/DahanItamar/acsm) — routes projects to applicable security and compliance obligations, with citations.
-
 ## Contribution activity
 
 <picture>
@@ -181,8 +162,7 @@ I turn engineering workflows into reusable skills for AI coding agents:
 '''
 readme = readme.replace('{development_badges}', badge_row(badges[:5]) + '\n\n' + badge_row(badges[5:10]))
 readme = readme.replace('{ai_badges}', badge_row(badges[10:]))
-readme = re.sub(r'<img src="(assets/components/[^\"]+-card\.svg)" width="410" alt="([^\"]+)" />', lambda match: themed_image(match[1], 410, match[2]), readme)
-readme += catalogue + '\n\n<details>\n<summary><strong>About and engineering principles</strong></summary>\n\n' + about + '\n\n' + principles + '\n\n</details>\n\n'
+readme = re.sub(r'<img src="(assets/components/[^\"]+-card\.svg)" width="48%" alt="([^\"]+)" />', lambda match: themed_image(match[1], '48%', match[2]), readme)
 readme += '''---
 
 **Explore the work. Start a conversation.**
@@ -191,13 +171,35 @@ readme += '''---
 '''
 (ROOT / 'README.md').write_text(readme, encoding='utf-8', newline='\n')
 
-native = re.sub(r'<picture>.*?</picture>\s*', '', source, flags=re.S)
-native = re.sub(r'## Contributions\n.*?\n---\n', '---\n', native, flags=re.S)
-native = native[:native.index('<details>\n<summary>Profile options</summary>')].rstrip()
-native = native.replace('# Itamar Dahan\n', '# Itamar Dahan\n\n**I build useful systems. Then make them dependable.**\n', 1)
-native = native.replace('### DockNest\n', '### [DockNest](https://github.com/DahanItamar/DockNest)\n')
-native = native.replace('Private project · controlled beta · ', '')
-native = native.replace('\nEntries without repository links are private projects.\n', '\n')
-for label, url in [('Case study', 'https://houserules.itamardahan.com/'), ('Try it', 'https://gitcheckup.com'), ('Play', 'https://wordlehebrew.com')]:
-    native = native.replace(f' [{label}]({url}).', '')
-(ROOT / 'STATIC.md').write_text('[← View the profile](README.md)\n\n'+native+'\n', encoding='utf-8', newline='\n')
+native = '''[← View the profile](README.md)
+
+# Itamar Dahan
+
+**Full-stack development · Automation · AI-assisted engineering**
+
+## I build useful systems. Then make them dependable.
+
+Readable architecture. Secure defaults. Accessible interfaces.
+
+'''
+native += '**Development:** ' + ' · '.join(label for _, label, _ in badges[:10]) + '\n\n'
+native += '**AI & automation:** ' + ' · '.join(label for _, label, _ in badges[10:]) + '\n\n'
+native += '## Selected systems\n\n'
+for name, _, headline, description, stack in cards[:4]:
+    title = 'House Rules' if name == 'HouseRules' else name
+    native += f'### [{title}](https://github.com/DahanItamar/{name})\n\n**{headline}**\n\n' + ' '.join(description) + f'\n\n{stack}\n\n'
+native += '''## How I build
+
+The same acceptance criterion stays traceable through constitution, specification, tasks, implementation, drift checking and refactoring.
+
+## Contribution activity
+
+[View my GitHub contributions](https://github.com/DahanItamar)
+
+---
+
+**Explore the work. Start a conversation.**
+
+[itamardahan1111d@gmail.com](mailto:itamardahan1111d@gmail.com)
+'''
+(ROOT / 'STATIC.md').write_text(native, encoding='utf-8', newline='\n')
