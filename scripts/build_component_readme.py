@@ -62,6 +62,14 @@ def badge_row(items):
     return '<p align="center">\n' + '\n'.join(images) + '\n</p>'
 
 
+contribution_body = '<rect x=".5" y=".5" width="277" height="41" rx="6" fill="none" stroke="#39464d"/>'
+contribution_body += '<g fill="none" stroke="#c6f27f" stroke-width="1.7"><circle cx="18" cy="13" r="2.5"/><circle cx="29" cy="13" r="2.5"/><circle cx="18" cy="30" r="2.5"/><path d="M18 15.5V27.5M29 15.5V19C29 23 25 24 18 24"/></g>'
+contribution_body += '<text x="46" y="26" fill="#f0f2eb" font-size="13" font-weight="600">mise contributor</text><path d="M162 10V32" stroke="#39464d"/><text x="175" y="26" fill="#c6f27f" font-size="12" font-weight="600">PR #13985</text>'
+contribution_markup = svg(278, 42, contribution_body, 'mise contributor: merged pull request #13985')
+(OUT / 'badges' / 'mise-contributor.svg').write_text(contribution_markup, encoding='utf-8', newline='\n')
+(OUT / 'badges' / 'mise-contributor-light.svg').write_text(light_theme(contribution_markup), encoding='utf-8', newline='\n')
+
+
 cards = [
     ('DockNest', 'BACKUP & RECOVERY', 'Backups ready for recovery.', ['Encrypted backups. Isolated restores.', 'Recovery backed by evidence.'], 'Node.js · SQLite · Docker · SFTP'),
     ('Slotline', 'BOOKING SYSTEM', 'One resource. One booking.', ['Database-enforced reservations.', 'Tenant isolation. Live calendars.'], 'TypeScript · Fastify · PostgreSQL'),
@@ -145,6 +153,10 @@ readme = '''<h1 align="center">ITAMAR DAHAN</h1>
 
 ## Contribution activity
 
+<p align="center">
+  <a href="https://github.com/jdx/mise/pull/13985">{contribution_badge}</a>
+</p>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DahanItamar/DahanItamar/output/pacman-contribution-graph-dark.svg" />
   <img src="https://raw.githubusercontent.com/DahanItamar/DahanItamar/output/pacman-contribution-graph.svg" width="100%" alt="Pac-Man eating my GitHub contribution graph, generated from my contribution activity." />
@@ -153,6 +165,7 @@ readme = '''<h1 align="center">ITAMAR DAHAN</h1>
 '''
 readme = readme.replace('{development_badges}', badge_row(badges[:5]) + '\n\n' + badge_row(badges[5:10]))
 readme = readme.replace('{ai_badges}', badge_row(badges[10:]))
+readme = readme.replace('{contribution_badge}', themed_image('assets/components/badges/mise-contributor.svg', 278, 'mise contributor — merged PR #13985', 42))
 readme = re.sub(r'<img src="(assets/components/[^\"]+-card\.svg)" width="48%" alt="([^\"]+)" />', lambda match: themed_image(match[1], '48%', match[2]), readme)
 (ROOT / 'README.md').write_text(readme.rstrip() + '\n', encoding='utf-8', newline='\n')
 
@@ -175,5 +188,5 @@ native += '## Selected systems\n\n'
 for name, _, headline, description, stack in cards[:4]:
     title = 'House Rules' if name == 'HouseRules' else name
     native += f'### [{title}](https://github.com/DahanItamar/{name})\n\n**{headline}**\n\n' + ' '.join(description) + f'\n\n{stack}\n\n'
-native += '## Contribution activity\n\nMy GitHub contribution graph appears in the profile.\n'
+native += '## Contribution activity\n\n[mise contributor · merged PR #13985](https://github.com/jdx/mise/pull/13985)\n\nMy GitHub contribution graph appears in the profile.\n'
 (ROOT / 'STATIC.md').write_text(native, encoding='utf-8', newline='\n')

@@ -51,6 +51,10 @@
 
 ## Contribution activity
 
+<p align="center">
+  <a href="https://github.com/jdx/mise/pull/13985"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/mise-contributor.svg" /><img src="assets/components/badges/mise-contributor-light.svg" width="278" height="42" alt="mise contributor — merged PR #13985" /></picture></a>
+</p>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DahanItamar/DahanItamar/output/pacman-contribution-graph-dark.svg" />
   <img src="https://raw.githubusercontent.com/DahanItamar/DahanItamar/output/pacman-contribution-graph.svg" width="100%" alt="Pac-Man eating my GitHub contribution graph, generated from my contribution activity." />

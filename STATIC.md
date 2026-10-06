@@ -50,4 +50,6 @@ Godot 4 · GDScript
 
 ## Contribution activity
 
+[mise contributor · merged PR #13985](https://github.com/jdx/mise/pull/13985)
+
 My GitHub contribution graph appears in the profile.
