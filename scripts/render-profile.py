@@ -47,10 +47,12 @@ for parent in root.iter():
             parent.remove(child)
 assert len(animated)>3, 'No building growth animation found'
 # The animation changes display geometry, not contribution counts or labels.
-palette=Image.open(BytesIO(cairosvg.svg2png(bytestring=ET.tostring(root),output_width=760,output_height=505))).convert('RGB').quantize(colors=128)
+still=Image.open(BytesIO(cairosvg.svg2png(bytestring=ET.tostring(root),output_width=640,output_height=425))).convert('RGB')
+still.save(OUT/'contributions-still.webp','WEBP',quality=88,method=6)
+palette=still.quantize(colors=128)
 frames=[]
-progresses=[i/23 for i in range(24)]+[1]+[.75,.5,.25,0]
-durations=[110]*24+[1600]+[110]*4
+progresses=[i/19 for i in range(20)]+[1]+[.66,.33,0]
+durations=[130]*20+[1600]+[130]*3
 for p in progresses:
     # A short stagger sweeps the building growth across the year.
     for index,(parent,attribute,kind,start,end) in enumerate(animated):
@@ -61,15 +63,15 @@ for p in progresses:
         vals=[a+(b-a)*t for a,b in zip(start,end)]
         value=' '.join(f'{v:.3f}' for v in vals)
         parent.set(attribute,'translate('+value+')' if kind=='animateTransform' else value)
-    data=cairosvg.svg2png(bytestring=ET.tostring(root),output_width=760,output_height=505)
+    data=cairosvg.svg2png(bytestring=ET.tostring(root),output_width=640,output_height=425)
     im=Image.open(BytesIO(data)).convert('RGB')
     frames.append(im.quantize(palette=palette,dither=Image.Dither.NONE))
 frames[0].save(OUT/'contributions.gif',save_all=True,append_images=frames[1:],duration=durations,loop=0,optimize=True,disposal=2)
 gif=Image.open(OUT/'contributions.gif')
 assert gif.n_frames>=20 and gif.info.get('loop')==0
 gif.seek(0); first=gif.convert('RGB')
-gif.seek(23); last=gif.convert('RGB')
+gif.seek(19); last=gif.convert('RGB')
 assert ImageChops.difference(first,last).getbbox(), 'Animation frames are identical'
-assert (OUT/'contributions.gif').stat().st_size<1_200_000, 'GIF exceeded image budget'
+assert (OUT/'contributions.gif').stat().st_size<750_000, 'GIF exceeded image budget'
 print('Verified looping building animation:',gif.n_frames,'frames')
 for file in OUT.iterdir(): print(file.name,file.stat().st_size,'bytes')
