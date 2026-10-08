@@ -1,61 +1,28 @@
-<h1 align="center">ITAMAR DAHAN</h1>
+# Itamar Dahan
 
-<p align="center"><strong>Full-stack development · Automation · AI-assisted engineering</strong></p>
+**Full-stack & automation developer · Israel**
 
-<h2 align="center">I build useful systems.<br />Then make them dependable.</h2>
+I build useful systems. Then make them dependable.
 
-<p align="center">
-  <a href="https://itamardahan.com/">Website</a> · <a href="#selected-systems">Selected systems</a>
-</p>
-
-<p align="center"><strong>Readable architecture. Secure defaults. Accessible interfaces.</strong></p>
-
-<p align="center"><strong>Development</strong></p>
-
-<p align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/typescript.svg" /><img src="assets/components/badges/typescript-light.svg" width="134" height="42" alt="TypeScript" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/javascript.svg" /><img src="assets/components/badges/javascript-light.svg" width="134" height="42" alt="JavaScript" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/react.svg" /><img src="assets/components/badges/react-light.svg" width="102" height="42" alt="React" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/nodedotjs.svg" /><img src="assets/components/badges/nodedotjs-light.svg" width="118" height="42" alt="Node.js" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/csharp.svg" /><img src="assets/components/badges/csharp-light.svg" width="84" height="42" alt="C#" /></picture>
-</p>
-
-<p align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/dotnet.svg" /><img src="assets/components/badges/dotnet-light.svg" width="100" height="42" alt=".NET" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/postgresql.svg" /><img src="assets/components/badges/postgresql-light.svg" width="146" height="42" alt="PostgreSQL" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/sqlite.svg" /><img src="assets/components/badges/sqlite-light.svg" width="110" height="42" alt="SQLite" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/docker.svg" /><img src="assets/components/badges/docker-light.svg" width="110" height="42" alt="Docker" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/git.svg" /><img src="assets/components/badges/git-light.svg" width="88" height="42" alt="Git" /></picture>
-</p>
-
-<p align="center"><strong>AI &amp; automation</strong></p>
-
-<p align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/claudecode.svg" /><img src="assets/components/badges/claudecode-light.svg" width="152" height="42" alt="Claude Code" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/codex.svg" /><img src="assets/components/badges/codex-light.svg" width="108" height="42" alt="Codex" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/gemini.svg" /><img src="assets/components/badges/gemini-light.svg" width="116" height="42" alt="Gemini" /></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/n8n.svg" /><img src="assets/components/badges/n8n-light.svg" width="92" height="42" alt="n8n" /></picture>
-</p>
-
-## Selected systems
-
-<p>
-  <a href="https://github.com/DahanItamar/DockNest"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/docknest-card.svg" /><img src="assets/components/docknest-card-light.svg" width="48%" alt="DockNest — encrypted backups, isolated restores and recovery evidence. Node.js, SQLite, Docker, SFTP." /></picture></a>
-  <a href="https://github.com/DahanItamar/Slotline"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/slotline-card.svg" /><img src="assets/components/slotline-card-light.svg" width="48%" alt="Slotline — database-enforced reservations, tenant isolation and live calendars. TypeScript, Fastify, PostgreSQL." /></picture></a>
-</p>
-
-<p>
-  <a href="https://github.com/DahanItamar/Winnow"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/winnow-card.svg" /><img src="assets/components/winnow-card-light.svg" width="48%" alt="Winnow — local-first project ideas grounded in developer complaints and original sources. Electron, React, SQLite." /></picture></a>
-  <a href="https://github.com/DahanItamar/HouseRules"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/houserules-card.svg" /><img src="assets/components/houserules-card-light.svg" width="48%" alt="House Rules — offline casino adventure with nine cabinets and four rooms, built with Godot." /></picture></a>
-</p>
-
-## Contribution activity
-
-<p align="center">
-  <a href="https://github.com/jdx/mise/pull/13985"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/badges/mise-contributor.svg" /><img src="assets/components/badges/mise-contributor-light.svg" width="278" height="42" alt="mise contributor — merged PR #13985" /></picture></a>
-</p>
+[Website](https://itamardahan.com/) · [Projects](#selected-work) · [Open-source contributions](https://github.com/pulls?q=is%3Apr+author%3ADahanItamar+is%3Amerged)
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DahanItamar/DahanItamar/output/pacman-contribution-graph-dark.svg" />
-  <img src="https://raw.githubusercontent.com/DahanItamar/DahanItamar/output/pacman-contribution-graph.svg" width="100%" alt="Pac-Man eating my GitHub contribution graph, generated from my contribution activity." />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/skyline/dark.svg" />
+  <img src="assets/skyline/light.svg" width="980" height="430" alt="My real GitHub contributions over the past year, drawn as an isometric skyline. Each building represents one day." />
 </picture>
+
+### Selected work
+
+- **[Slotline](https://github.com/DahanItamar/Slotline)** — Multi-tenant booking with PostgreSQL constraints that prevent double-booking, row-level tenant isolation, and live calendars.
+- **[Winnow](https://github.com/DahanItamar/Winnow)** — A local-first desktop tool that turns developer complaints into project ideas linked to their original sources.
+- **[House Rules](https://github.com/DahanItamar/HouseRules)** — An offline Godot casino adventure and an experiment in AI-assisted game development.
+
+### How I build
+
+TypeScript, React, Node.js, C#/.NET, PostgreSQL, SQLite, Docker, and n8n. Readable architecture, secure defaults, and accessible interfaces.
+
+### Open source
+
+Merged contributions to **mise**: [#13985](https://github.com/jdx/mise/pull/13985) · [#14034](https://github.com/jdx/mise/pull/14034).
+
+<sub>The skyline uses GitHub's contribution calendar and refreshes daily. Open my [GitHub activity](https://github.com/DahanItamar?tab=overview) for individual days.</sub>
