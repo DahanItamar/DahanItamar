@@ -1,40 +1,50 @@
-<img src="assets/identity/header.svg" width="980" alt="Hey, I'm Itamar Dahan. Full-stack and automation developer from Israel. I build useful systems, then make them dependable." />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/wordmark-dark.png" />
+  <img src="assets/profile-v2/wordmark-light.png" width="980" alt="Itamar Dahan. Full-stack development and automation." />
+</picture>
 
-<p align="center">
-  <a href="https://itamardahan.com/"><strong>My website ↗</strong></a>
-  &nbsp; · &nbsp;
-  <a href="#things-ive-built">Things I've built</a>
-  &nbsp; · &nbsp;
-  <a href="#a-year-in-3d">A year in 3D</a>
-</p>
+[Website ↗](https://itamardahan.com/) &nbsp; [Selected work ↓](#selected-work) &nbsp; [Open source ↓](#open-source)
 
-### A little about me 👋
+I’m a developer in Israel working across web apps, automation and desktop tools. My stack includes TypeScript, React, Node.js, C#/.NET and PostgreSQL.
 
-```typescript
-const itamar = {
-  basedIn: "Israel",
-  builds: ["full-stack apps", "automation", "desktop tools"],
-  worksWith: ["TypeScript", "React", "Node.js", "C# / .NET"],
-  caresAbout: ["readable architecture", "secure defaults", "accessible UI"],
-};
+## My GitHub activity
+
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/profile-v2/contributions-still.webp" />
+  <img src="assets/profile-v2/contributions.gif" width="980" alt="My actual GitHub contribution city. The buildings rise across the year, hold, and repeat." />
+</picture>
+
+<sub>Real contribution data, refreshed daily. [View individual contributions ↗](https://github.com/DahanItamar?tab=overview)</sub>
+
+## Selected work
+
+### [Winnow ↗](https://github.com/DahanItamar/Winnow)
+
+**Project ideas with an evidence trail.** A local-first desktop app that connects ideas to the developer complaints behind them. Electron, React and SQLite.
+
+<a href="https://github.com/DahanItamar/Winnow"><img src="assets/profile-v2/winnow.webp" width="980" alt="Actual Winnow application screenshot: the idea ledger on the left and source complaints supporting an idea on the right." /></a>
+
+### [Slotline ↗](https://github.com/DahanItamar/Slotline)
+
+**Two people book the same slot. Only one wins.** PostgreSQL exclusion constraints prevent overlapping bookings at write time. TypeScript, Fastify and PostgreSQL.
+
+```sql
+EXCLUDE USING gist (resource_id WITH =, period WITH &&)
+WHERE (status = 'confirmed');
 ```
 
-### Things I've built
+[Read the booking-race design ↗](https://github.com/DahanItamar/Slotline#slotline)
 
-<a href="https://github.com/DahanItamar/Slotline"><img src="assets/identity/slotline.svg" width="980" alt="Slotline — multi-tenant booking, database-enforced protection against double-booking, and live calendars. TypeScript, Fastify, PostgreSQL." /></a>
+### [House Rules ↗](https://github.com/DahanItamar/HouseRules)
 
-<a href="https://github.com/DahanItamar/Winnow"><img src="assets/identity/winnow.svg" width="980" alt="Winnow — local-first project research with ideas linked to original developer complaints. Electron, React, SQLite." /></a>
+An offline Godot casino adventure with nine playable cabinets. An experiment in AI-assisted game development.
 
-<a href="https://github.com/DahanItamar/HouseRules"><img src="assets/identity/houserules.svg" width="980" alt="House Rules — an offline Godot casino adventure and an experiment in AI-assisted game development." /></a>
+[Gameplay gallery ↗](https://github.com/DahanItamar/HouseRules#gallery)
 
-### Out in the open
+## Open source
 
-Recent open-source work includes two merged contributions to **mise**: [#13985](https://github.com/jdx/mise/pull/13985) · [#14034](https://github.com/jdx/mise/pull/14034).
+Two merged contributions to **mise**: [#13985](https://github.com/jdx/mise/pull/13985) and [#14034](https://github.com/jdx/mise/pull/14034).
 
-[More merged contributions ↗](https://github.com/pulls?q=is%3Apr+author%3ADahanItamar+is%3Amerged)
+[All merged contributions ↗](https://github.com/pulls?q=is%3Apr+author%3ADahanItamar+is%3Amerged)
 
-### A year in 3D
-
-<img src="profile-3d-contrib/profile-night-view.svg" width="980" alt="My real GitHub contribution calendar rendered as a 3D night-time city, alongside contribution and language charts." />
-
-<sub>Built from my GitHub activity and refreshed daily with [github-profile-3d-contrib](https://github.com/yoshi389111/github-profile-3d-contrib). [Explore my activity ↗](https://github.com/DahanItamar?tab=overview)</sub>
+<sub>3D data visualization by [github-profile-3d-contrib](https://github.com/yoshi389111/github-profile-3d-contrib). Project preview captured from Winnow itself.</sub>
