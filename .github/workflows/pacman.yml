@@ -1,4 +1,5 @@
 name: Generate contribution pacman
+
 on:
   schedule:
     - cron: "0 0 * * *"
@@ -6,36 +7,27 @@ on:
   push:
     branches: [main]
     paths: [".github/workflows/pacman.yml"]
+
 permissions:
   contents: write
-concurrency:
-  group: profile-pacman
-  cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - name: Generate Pac-Man animations
-        uses: abozanona/pacman-contribution-graph@7332e1de7903ab780c3692a4127a59cc13872daa
+      # Stock github / github-dark themes. Unlike snk, this generator exposes no
+      # colour parameters, so the graph is the one deliberately colourful block
+      # on an otherwise monochrome page.
+      - name: Generate pacman animations
+        uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           games: "pacman"
-      - name: Apply consistent neutral palette
-        run: |
-          node <<'NODE'
-          const fs = require('node:fs');
-          for (const name of fs.readdirSync('dist').filter(name => name.endsWith('.svg'))) {
-            const path = 'dist/' + name;
-            let svg = fs.readFileSync(path, 'utf8');
-            svg = svg.replace(/(<svg\b[^>]*>)/, '$1<defs><filter id="profile-neutral" x="-5%" y="-5%" width="110%" height="110%" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/></filter></defs><g filter="url(#profile-neutral)">');
-            svg = svg.replace(/<\/svg>\s*$/, '</g></svg>');
-            fs.writeFileSync(path, svg);
-          }
-          NODE
-      - name: Publish output branch
-        uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865
+
+      # Replaces the whole output branch, so the old snake SVGs go with it.
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist

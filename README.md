@@ -30,14 +30,6 @@ I turn ideas into digital products that are simple to use and built to last. Tho
   <a href="https://github.com/DahanItamar/HouseRules"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/houserules-card.svg" /><img src="assets/components/houserules-card-light.svg" width="48%" alt="House Rules: an offline casino adventure with nine playable cabinets. Godot 4 and GDScript." /></picture></a>
 </p>
 
-<sub>DockNest is private. The other three cards open their public repositories.</sub>
-
-<h2 align="center">Contributions</h2>
-
-Merged contributions to **mise**: [#13985](https://github.com/jdx/mise/pull/13985) · [#14034](https://github.com/jdx/mise/pull/14034).
-
-
-
 <br>
 
 <picture>
