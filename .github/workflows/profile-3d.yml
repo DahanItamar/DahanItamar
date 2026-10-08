@@ -1,4 +1,4 @@
-name: Update night-view 3D contributions
+name: Update animated 3D profile
 on:
   schedule:
     - cron: '17 3 * * *'
@@ -7,6 +7,7 @@ on:
     branches: [main]
     paths:
       - .github/workflows/profile-3d.yml
+      - scripts/render-profile.py
 permissions:
   contents: write
 concurrency:
@@ -18,21 +19,23 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
-      - name: Generate real contribution graphs
+      - name: Generate real contribution data
         uses: yoshi389111/github-profile-3d-contrib@7d95e7d4cdc028dd1e1cbd957d65f35efb12ae39
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-      - name: Verify and commit only the night-view image
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install image export tools
+        run: python -m pip install Pillow==11.3.0 CairoSVG==2.8.2
+      - name: Export and verify looping animation and genuine project preview
+        run: python scripts/render-profile.py
+      - name: Commit profile images
         run: |
-          test -s profile-3d-contrib/profile-night-view.svg
-          python3 - <<'PY'
-          import xml.etree.ElementTree as ET
-          ET.parse('profile-3d-contrib/profile-night-view.svg')
-          PY
-          git add profile-3d-contrib/profile-night-view.svg
+          git add profile-3d-contrib/profile-night-view.svg assets/profile-v2
           if git diff --cached --quiet; then exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore(profile): refresh night-view 3D contributions"
+          git commit -m "chore(profile): refresh animated contribution city"
           git push
