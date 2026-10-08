@@ -13,9 +13,7 @@
 
 <h2 align="center">About</h2>
 
-I’m a developer in Israel building web apps, desktop tools and automations. My projects range from verified backups and database-enforced bookings to evidence-driven ideas and offline games.
-
-I use Claude Code for development, and n8n and LLM APIs to connect services and automate repetitive work.
+I turn ideas into digital products that are simple to use and built to last. Thoughtful design, reliable development, and a clear focus on your goals.
 
 <p align="center"><samp>TypeScript · React · Node.js · C#/.NET · PostgreSQL · SQLite · Docker</samp></p>
 
