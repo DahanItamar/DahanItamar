@@ -1,6 +1,6 @@
 <div align="center">
 
-# Itamar Dahan
+<h1 align="center">Itamar Dahan</h1>
 
 <samp>FULL-STACK&nbsp;&nbsp;&amp;&nbsp;&nbsp;AUTOMATION&nbsp;&nbsp;DEVELOPER</samp>
 
@@ -8,39 +8,37 @@
 
 <samp>[Website](https://itamardahan.com/)&nbsp;&nbsp;·&nbsp;&nbsp;[Email](mailto:itamardahan1111d@gmail.com)</samp>
 
-</div>
 
----
 
-## About
+
+<h2 align="center">About</h2>
 
 I’m a developer in Israel building web apps, desktop tools and automations. My projects range from verified backups and database-enforced bookings to evidence-driven ideas and offline games.
 
 I use Claude Code for development, and n8n and LLM APIs to connect services and automate repetitive work.
 
-<p><samp>TypeScript · React · Node.js · C#/.NET · PostgreSQL · SQLite · Docker</samp></p>
+<p align="center"><samp>TypeScript · React · Node.js · C#/.NET · PostgreSQL · SQLite · Docker</samp></p>
 
-## Selected Work
+<h2 align="center">Selected Work</h2>
 
-Infrastructure. Scheduling. Ideas. Play.
 
-<p>
+<p align="center">
   <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/docknest-card.svg" /><img src="assets/components/docknest-card-light.svg" width="48%" alt="DockNest, private project: encrypted backups and verified restores. Node.js, SQLite, Docker and SFTP." /></picture>
   <a href="https://github.com/DahanItamar/Slotline"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/slotline-card.svg" /><img src="assets/components/slotline-card-light.svg" width="48%" alt="Slotline: database-enforced bookings, tenant isolation and live calendars. TypeScript, Fastify and PostgreSQL." /></picture></a>
 </p>
 
-<p>
+<p align="center">
   <a href="https://github.com/DahanItamar/Winnow"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/winnow-card.svg" /><img src="assets/components/winnow-card-light.svg" width="48%" alt="Winnow: local-first project ideas linked to original developer complaints. Electron, React and SQLite." /></picture></a>
   <a href="https://github.com/DahanItamar/HouseRules"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/houserules-card.svg" /><img src="assets/components/houserules-card-light.svg" width="48%" alt="House Rules: an offline casino adventure with nine playable cabinets. Godot 4 and GDScript." /></picture></a>
 </p>
 
 <sub>DockNest is private. The other three cards open their public repositories.</sub>
 
-## Contributions
+<h2 align="center">Contributions</h2>
 
 Merged contributions to **mise**: [#13985](https://github.com/jdx/mise/pull/13985) · [#14034](https://github.com/jdx/mise/pull/14034).
 
-<div align="center">
+
 
 <br>
 
