@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 340" role="img" aria-labelledby="title desc">
+<title id="title">Hey, I'm Itamar Dahan</title><desc id="desc">Full-stack and automation developer from Israel. A hand-drawn style illustration of a coding desk and friendly robot.</desc>
+<rect x="1" y="1" width="978" height="338" rx="24" fill="#0d1117" stroke="#293441" stroke-width="2"/>
+<path d="M32 292H948" stroke="#263340" stroke-width="2"/>
+<g fill="#263340"><circle cx="926" cy="42" r="2"/><circle cx="915" cy="76" r="2"/><circle cx="576" cy="54" r="2"/><circle cx="872" cy="301" r="2"/><circle cx="557" cy="268" r="2"/></g>
+<g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+<rect x="38" y="32" width="212" height="28" rx="14" fill="#192b29"/><circle cx="54" cy="46" r="4" fill="#80e3c0"/>
+<text x="66" y="51" font-size="12" letter-spacing="1.4" fill="#b8efdc">DEVELOPER / ISRAEL</text>
+<text x="38" y="118" font-size="28" fill="#c6cdd5">Hey, I'm</text>
+<text x="36" y="180" font-size="60" font-weight="750" letter-spacing="-2" fill="#f6ecd9">Itamar Dahan.</text>
+<path d="M39 195Q180 188 323 196" fill="none" stroke="#ff907a" stroke-width="4" stroke-linecap="round"/>
+<text x="38" y="235" font-size="20" fill="#bfc8d2">Full-stack development + automation.</text>
+<text x="38" y="267" font-size="18" fill="#80e3c0">I build useful systems. Then make them dependable.</text>
+<text x="38" y="318" font-size="11" letter-spacing="2" fill="#84919f">CODE. CONNECT. MAKE IT WORK.</text>
+</g>
+<g stroke="#80e3c0" stroke-width="3" stroke-linejoin="round">
+<path d="M625 249H928L942 267H609Z" fill="#152521"/><path d="M632 268V287M919 268V287" fill="none"/>
+<rect x="635" y="73" width="228" height="157" rx="15" fill="#203139"/>
+<rect x="649" y="87" width="200" height="116" rx="7" fill="#0b1817"/>
+<path d="M740 231V245M723 245H757" fill="none"/>
+<path d="M670 109L677 115L670 121M688 121H713" fill="none" stroke-linecap="round"/>
+<path d="M671 142H765M671 155H743M671 168H787" stroke="#43766a" stroke-width="5" stroke-linecap="round"/>
+<path d="M795 150L807 139L795 129M817 129L829 139L817 150" fill="none" stroke="#ff907a" stroke-linecap="round"/>
+<path d="M659 245H817L829 254H650Z" fill="#233d36" stroke-width="2"/>
+<path d="M676 249H800" stroke="#5c8b7e" stroke-width="2"/>
+</g>
+<g stroke="#ff907a" stroke-width="3" stroke-linejoin="round">
+<rect x="873" y="218" width="30" height="30" rx="5" fill="#2d2524"/><path d="M903 223H910Q918 231 910 239H903" fill="none"/><path d="M880 207Q875 203 880 197M892 207Q888 202 893 196" fill="none" stroke="#b98375" stroke-width="2"/>
+</g>
+<g stroke="#80e3c0" stroke-width="2.5">
+<path d="M897 139V126" fill="none"/><circle cx="897" cy="124" r="4" fill="#ff907a" stroke="#ff907a"/>
+<rect x="871" y="142" width="52" height="39" rx="10" fill="#18312b"/><circle cx="884" cy="158" r="3" fill="#f6ecd9" stroke="none"/><circle cx="910" cy="158" r="3" fill="#f6ecd9" stroke="none"/>
+<path d="M889 169Q898 176 906 169" fill="none" stroke-linecap="round"/>
+<path d="M880 184L874 192M915 184L921 192" stroke-linecap="round"/>
+</g>
+</svg>

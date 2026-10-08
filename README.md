@@ -1,28 +1,40 @@
-# Itamar Dahan
+<img src="assets/identity/header.svg" width="980" alt="Hey, I'm Itamar Dahan. Full-stack and automation developer from Israel. I build useful systems, then make them dependable." />
 
-**Full-stack & automation developer · Israel**
+<p align="center">
+  <a href="https://itamardahan.com/"><strong>My website ↗</strong></a>
+  &nbsp; · &nbsp;
+  <a href="#things-ive-built">Things I've built</a>
+  &nbsp; · &nbsp;
+  <a href="#a-year-in-3d">A year in 3D</a>
+</p>
 
-I build useful systems. Then make them dependable.
+### A little about me 👋
 
-[Website](https://itamardahan.com/) · [Projects](#selected-work) · [Open-source contributions](https://github.com/pulls?q=is%3Apr+author%3ADahanItamar+is%3Amerged)
+```typescript
+const itamar = {
+  basedIn: "Israel",
+  builds: ["full-stack apps", "automation", "desktop tools"],
+  worksWith: ["TypeScript", "React", "Node.js", "C# / .NET"],
+  caresAbout: ["readable architecture", "secure defaults", "accessible UI"],
+};
+```
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/skyline/dark.svg" />
-  <img src="assets/skyline/light.svg" width="980" height="430" alt="My real GitHub contributions over the past year, drawn as an isometric skyline. Each building represents one day." />
-</picture>
+### Things I've built
 
-### Selected work
+<a href="https://github.com/DahanItamar/Slotline"><img src="assets/identity/slotline.svg" width="980" alt="Slotline — multi-tenant booking, database-enforced protection against double-booking, and live calendars. TypeScript, Fastify, PostgreSQL." /></a>
 
-- **[Slotline](https://github.com/DahanItamar/Slotline)** — Multi-tenant booking with PostgreSQL constraints that prevent double-booking, row-level tenant isolation, and live calendars.
-- **[Winnow](https://github.com/DahanItamar/Winnow)** — A local-first desktop tool that turns developer complaints into project ideas linked to their original sources.
-- **[House Rules](https://github.com/DahanItamar/HouseRules)** — An offline Godot casino adventure and an experiment in AI-assisted game development.
+<a href="https://github.com/DahanItamar/Winnow"><img src="assets/identity/winnow.svg" width="980" alt="Winnow — local-first project research with ideas linked to original developer complaints. Electron, React, SQLite." /></a>
 
-### How I build
+<a href="https://github.com/DahanItamar/HouseRules"><img src="assets/identity/houserules.svg" width="980" alt="House Rules — an offline Godot casino adventure and an experiment in AI-assisted game development." /></a>
 
-TypeScript, React, Node.js, C#/.NET, PostgreSQL, SQLite, Docker, and n8n. Readable architecture, secure defaults, and accessible interfaces.
+### Out in the open
 
-### Open source
+Recent open-source work includes two merged contributions to **mise**: [#13985](https://github.com/jdx/mise/pull/13985) · [#14034](https://github.com/jdx/mise/pull/14034).
 
-Merged contributions to **mise**: [#13985](https://github.com/jdx/mise/pull/13985) · [#14034](https://github.com/jdx/mise/pull/14034).
+[More merged contributions ↗](https://github.com/pulls?q=is%3Apr+author%3ADahanItamar+is%3Amerged)
 
-<sub>The skyline uses GitHub's contribution calendar and refreshes daily. Open my [GitHub activity](https://github.com/DahanItamar?tab=overview) for individual days.</sub>
+### A year in 3D
+
+<img src="profile-3d-contrib/profile-night-view.svg" width="980" alt="My real GitHub contribution calendar rendered as a 3D night-time city, alongside contribution and language charts." />
+
+<sub>Built from my GitHub activity and refreshed daily with [github-profile-3d-contrib](https://github.com/yoshi389111/github-profile-3d-contrib). [Explore my activity ↗](https://github.com/DahanItamar?tab=overview)</sub>
