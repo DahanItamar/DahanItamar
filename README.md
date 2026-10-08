@@ -14,21 +14,15 @@
 
 ## About
 
-I’m a developer in Israel building web apps, desktop tools and automations. I like projects with a clear mechanism: a database that refuses a double booking, an idea linked to its source, a small game you can play offline.
+I’m a developer in Israel building web apps, desktop tools and automations. My projects range from verified backups and database-enforced bookings to evidence-driven ideas and offline games.
 
-I work with Claude Code and LLM-assisted workflows across architecture, implementation, review and testing. I also build automations with n8n and LLM APIs to connect services and reduce repetitive work.
+I use Claude Code for development, and n8n and LLM APIs to connect services and automate repetitive work.
 
-- **Architecture first** · small modules, clear boundaries, readable code
-- **Fewer moving parts** · dependencies that earn their place
-- **Security and accessibility** · considered throughout development
+<p><samp>TypeScript · React · Node.js · C#/.NET · PostgreSQL · SQLite · Docker</samp></p>
 
-<samp>**Core**&nbsp;&nbsp;&nbsp;JavaScript&nbsp;&nbsp;·&nbsp;&nbsp;TypeScript&nbsp;&nbsp;·&nbsp;&nbsp;React&nbsp;&nbsp;·&nbsp;&nbsp;Node.js&nbsp;&nbsp;·&nbsp;&nbsp;C#&nbsp;&nbsp;·&nbsp;&nbsp;.NET&nbsp;&nbsp;·&nbsp;&nbsp;PostgreSQL&nbsp;&nbsp;·&nbsp;&nbsp;SQLite&nbsp;&nbsp;·&nbsp;&nbsp;Docker</samp>
+## Selected Work
 
-<samp>**AI**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Claude Code&nbsp;&nbsp;·&nbsp;&nbsp;n8n&nbsp;&nbsp;·&nbsp;&nbsp;LLM APIs&nbsp;&nbsp;·&nbsp;&nbsp;agent workflows</samp>
-
-## 🟢 Selected Work
-
-Four projects across infrastructure, web apps, desktop tools and games.
+Infrastructure. Scheduling. Ideas. Play.
 
 <p>
   <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/docknest-card.svg" /><img src="assets/components/docknest-card-light.svg" width="48%" alt="DockNest, private project: encrypted backups and verified restores. Node.js, SQLite, Docker and SFTP." /></picture>
@@ -42,7 +36,7 @@ Four projects across infrastructure, web apps, desktop tools and games.
 
 <sub>DockNest is private. The other three cards open their public repositories.</sub>
 
-## 👾 Contributions
+## Contributions
 
 Merged contributions to **mise**: [#13985](https://github.com/jdx/mise/pull/13985) · [#14034](https://github.com/jdx/mise/pull/14034).
 
