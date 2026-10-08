@@ -21,6 +21,7 @@ I work with Claude Code and LLM-assisted workflows across architecture, implemen
 - **Architecture first** · small modules, clear boundaries, readable code
 - **Fewer moving parts** · dependencies that earn their place
 - **Security and accessibility** · considered throughout development
+
 <samp>**Core**&nbsp;&nbsp;&nbsp;JavaScript&nbsp;&nbsp;·&nbsp;&nbsp;TypeScript&nbsp;&nbsp;·&nbsp;&nbsp;React&nbsp;&nbsp;·&nbsp;&nbsp;Node.js&nbsp;&nbsp;·&nbsp;&nbsp;C#&nbsp;&nbsp;·&nbsp;&nbsp;.NET&nbsp;&nbsp;·&nbsp;&nbsp;PostgreSQL&nbsp;&nbsp;·&nbsp;&nbsp;SQLite&nbsp;&nbsp;·&nbsp;&nbsp;Docker</samp>
 
 <samp>**AI**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Claude Code&nbsp;&nbsp;·&nbsp;&nbsp;n8n&nbsp;&nbsp;·&nbsp;&nbsp;LLM APIs&nbsp;&nbsp;·&nbsp;&nbsp;agent workflows</samp>
@@ -60,7 +61,7 @@ I work with Claude Code and LLM-assisted workflows across architecture, implemen
 
 Reusable skills for specification, documentation and review. Four standalone plugins for Claude Code.
 
-| Plugin | About | |
+| Plugin | About | Focus |
 |:--|:--|:--|
 | [**spec-architect**](https://github.com/DahanItamar/spec-architect) | A spec workflow from constitution and requirements through implementation, drift checks and refactoring. | <samp>Specifications</samp> |
 | [**readme-architect**](https://github.com/DahanItamar/readme-architect) | README documentation grounded in actual project behavior and observed output. | <samp>Documentation</samp> |
