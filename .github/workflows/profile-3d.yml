@@ -1,0 +1,38 @@
+name: Update night-view 3D contributions
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/profile-3d.yml
+permissions:
+  contents: write
+concurrency:
+  group: profile-3d
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - name: Generate real contribution graphs
+        uses: yoshi389111/github-profile-3d-contrib@7d95e7d4cdc028dd1e1cbd957d65f35efb12ae39
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+      - name: Verify and commit only the night-view image
+        run: |
+          test -s profile-3d-contrib/profile-night-view.svg
+          python3 - <<'PY'
+          import xml.etree.ElementTree as ET
+          ET.parse('profile-3d-contrib/profile-night-view.svg')
+          PY
+          git add profile-3d-contrib/profile-night-view.svg
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(profile): refresh night-view 3D contributions"
+          git push
