@@ -19,13 +19,13 @@
 <h2 align="center" id="selected-systems">Selected Systems</h2>
 
 <p align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/docknest-card.svg" /><img src="assets/components/docknest-card-light.svg" width="48%" alt="DockNest — encrypted backups, isolated restores and recovery evidence. Node.js, SQLite, Docker, SFTP." /></picture>
-  <a href="https://github.com/DahanItamar/Slotline"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/slotline-card.svg" /><img src="assets/components/slotline-card-light.svg" width="48%" alt="Slotline — database-enforced reservations, tenant isolation and live calendars. TypeScript, Fastify, PostgreSQL." /></picture></a>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/docknest-card.svg?v=green-original-20261009" /><img src="assets/components/docknest-card-light.svg?v=green-original-20261009" width="48%" alt="DockNest — encrypted backups, isolated restores and recovery evidence. Node.js, SQLite, Docker, SFTP." /></picture>
+  <a href="https://github.com/DahanItamar/Slotline"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/slotline-card.svg?v=green-original-20261009" /><img src="assets/components/slotline-card-light.svg?v=green-original-20261009" width="48%" alt="Slotline — database-enforced reservations, tenant isolation and live calendars. TypeScript, Fastify, PostgreSQL." /></picture></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/DahanItamar/Winnow"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/winnow-card.svg" /><img src="assets/components/winnow-card-light.svg" width="48%" alt="Winnow — local-first project ideas grounded in developer complaints and original sources. Electron, React, SQLite." /></picture></a>
-  <a href="https://github.com/DahanItamar/HouseRules"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/houserules-card.svg" /><img src="assets/components/houserules-card-light.svg" width="48%" alt="House Rules — offline casino adventure with nine cabinets and four rooms, built with Godot." /></picture></a>
+  <a href="https://github.com/DahanItamar/Winnow"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/winnow-card.svg?v=green-original-20261009" /><img src="assets/components/winnow-card-light.svg?v=green-original-20261009" width="48%" alt="Winnow — local-first project ideas grounded in developer complaints and original sources. Electron, React, SQLite." /></picture></a>
+  <a href="https://github.com/DahanItamar/HouseRules"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/houserules-card.svg?v=green-original-20261009" /><img src="assets/components/houserules-card-light.svg?v=green-original-20261009" width="48%" alt="House Rules — offline casino adventure with nine cabinets and four rooms, built with Godot." /></picture></a>
 </p>
 
 <h2 align="center" id="how-i-build">How I Build</h2>
