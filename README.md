@@ -7,7 +7,7 @@
 <p align="center">I turn ideas into digital products that are simple to use and built to last. Thoughtful design, reliable development, and a clear focus on your goals.</p>
 
 <p align="center">
-  <a href="#selected-systems">Selected systems</a> · <a href="#how-i-build">How I build</a> · <a href="mailto:itamardahan1111d@gmail.com">Start a conversation</a>
+  <a href="#selected-systems">Selected systems</a> · <a href="mailto:itamardahan1111d@gmail.com">Start a conversation</a>
 </p>
 
 
@@ -28,12 +28,9 @@
   <a href="https://github.com/DahanItamar/HouseRules"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/components/houserules-card.svg?v=green-original-20261009" /><img src="assets/components/houserules-card-light.svg?v=green-original-20261009" width="48%" alt="House Rules — offline casino adventure with nine cabinets and four rooms, built with Godot." /></picture></a>
 </p>
 
-<h2 align="center" id="how-i-build">How I Build</h2>
-
-<p align="center"><samp>Plan clearly &nbsp;·&nbsp; Build thoughtfully &nbsp;·&nbsp; Test thoroughly</samp></p>
-
 <picture>
-  <img src="https://raw.githubusercontent.com/DahanItamar/DahanItamar/output/pacman-contribution-graph.svg?v=original-color-20261009" width="100%" alt="Pac-Man eating my GitHub contribution graph, generated from my contribution activity." />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DahanItamar/DahanItamar/output/pacman-contribution-graph-dark.svg" />
+  <img src="https://raw.githubusercontent.com/DahanItamar/DahanItamar/output/pacman-contribution-graph.svg" width="100%" alt="Pac-Man eating my GitHub contribution graph, generated from my contribution activity." />
 </picture>
 
 </div>
