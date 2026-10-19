@@ -33,6 +33,9 @@ VERDANA_BOLD = [float(w) for w in (
     "5.93 4.56 7.12 6.5 9.79 6.69 6.51 5.97 7.11 5.43 7.11 8.67"
 ).split()]
 
+# Neutral background for the AI and automation badges.
+AI_BG = "#24292f"
+
 # (file, label, logo file, background, foreground)
 TOOLS = [
     ("typescript", "TypeScript", "typescript.svg", "#3178C6", "#fff"),
@@ -41,10 +44,18 @@ TOOLS = [
     ("csharp-dotnet", "C# / .NET", "dotnet.svg", "#512BD4", "#fff"),
     ("postgresql", "PostgreSQL", "postgresql.svg", "#336791", "#fff"),
     ("docker", "Docker", "docker.svg", "#1D63ED", "#fff"),
-    ("claudecode", "Claude Code", "claudecode.svg", "#C15F3C", "#fff"),
-    ("codex", "Codex", "codex.svg", "#000000", "#fff"),
-    ("gemini", "Gemini", "gemini.svg", "#6F57A8", "#fff"),
-    ("n8n", "n8n", "n8n.svg", "#EA4B71", "#fff"),
+    # AI and automation share one neutral tone; the logos carry the brand.
+    ("claudecode", "Claude Code", "claudecode.svg", AI_BG, "#fff"),
+    ("codex", "Codex", "codex.svg", AI_BG, "#fff"),
+    ("cursor", "Cursor", "cursor.svg", AI_BG, "#fff"),
+    ("githubcopilot", "GitHub Copilot", "githubcopilot.svg", AI_BG, "#fff"),
+    ("gemini", "Gemini", "gemini.svg", AI_BG, "#fff"),
+    ("openai", "OpenAI", "openai.svg", AI_BG, "#fff"),
+    ("ollama", "Ollama", "ollama.svg", AI_BG, "#fff"),
+    ("mcp", "MCP", "mcp.svg", AI_BG, "#fff"),
+    ("n8n", "n8n", "n8n.svg", AI_BG, "#fff"),
+    ("make", "Make", "make.svg", AI_BG, "#fff"),
+    ("zapier", "Zapier", "zapier.svg", AI_BG, "#fff"),
 ]
 
 # Contact button: the profile's green, dark enough for white text.

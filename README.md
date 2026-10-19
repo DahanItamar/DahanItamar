@@ -28,8 +28,17 @@ I turn ideas into digital products that are simple to use and built to last. Tho
 <p align="center">
   <img alt="Claude Code" title="Claude Code" src=".github/assets/tools/claudecode.svg"/>
   <img alt="Codex" title="Codex" src=".github/assets/tools/codex.svg"/>
+  <img alt="Cursor" title="Cursor" src=".github/assets/tools/cursor.svg"/>
+  <img alt="GitHub Copilot" title="GitHub Copilot" src=".github/assets/tools/githubcopilot.svg"/>
+  <br>
   <img alt="Gemini" title="Gemini" src=".github/assets/tools/gemini.svg"/>
+  <img alt="OpenAI" title="OpenAI" src=".github/assets/tools/openai.svg"/>
+  <img alt="Ollama" title="Ollama" src=".github/assets/tools/ollama.svg"/>
+  <img alt="MCP" title="MCP" src=".github/assets/tools/mcp.svg"/>
+  <br>
   <img alt="n8n" title="n8n" src=".github/assets/tools/n8n.svg"/>
+  <img alt="Make" title="Make" src=".github/assets/tools/make.svg"/>
+  <img alt="Zapier" title="Zapier" src=".github/assets/tools/zapier.svg"/>
 </p>
 
 ---
