@@ -41,6 +41,10 @@ TOOLS = [
     ("csharp-dotnet", "C# / .NET", "dotnet.svg", "#512BD4", "#fff"),
     ("postgresql", "PostgreSQL", "postgresql.svg", "#336791", "#fff"),
     ("docker", "Docker", "docker.svg", "#1D63ED", "#fff"),
+    ("claudecode", "Claude Code", "claudecode.svg", "#C15F3C", "#fff"),
+    ("codex", "Codex", "codex.svg", "#000000", "#fff"),
+    ("gemini", "Gemini", "gemini.svg", "#6F57A8", "#fff"),
+    ("n8n", "n8n", "n8n.svg", "#EA4B71", "#fff"),
 ]
 
 # Contact button: the profile's green, dark enough for white text.
